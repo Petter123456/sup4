@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  it: MyString
+  finance: MyString
+  call_center: MyString
+  logistics: MyString
+  marketing: MyString
+  technology: MyString
+
+two:
+  it: MyString
+  finance: MyString
+  call_center: MyString
+  logistics: MyString
+  marketing: MyString
+  technology: MyString

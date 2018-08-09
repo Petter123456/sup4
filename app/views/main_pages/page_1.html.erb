@@ -1,0 +1,247 @@
+<p style="display: none;" class="petterpetter" id="petterpetter"><%= session[:user_id] ? 'true' : 'false'%></p>
+
+<div class="image_background2">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+
+          <h1 class="h1_index"> &#9678;
+            Digirek.se
+          </h1>
+
+          <ul class="nav nav-tabs">
+            <li role="presentation">
+              <%= link_to "Hem", '/main_page', id: "mainpage" %>
+            </li>
+            <li role="presentation">
+              <%= link_to "Hitta leverantörer", '/page1', id: "mainpage" %>
+            </li>
+            <li role="presentation" class="active">
+              <%= link_to "Om Oss", '/om_oss', class:"top_menu" %>
+            </li>
+            <li role="presentation" class="active">
+              <% if current_user %>
+              Välkommen <%= current_user.name %> | <%= link_to "Logga ut", '/logout' %>
+              <% else %>
+              <%= link_to "Logga in", '/login', id: "login" %> | <%= link_to "Registrera konto", '/signup', id:"signup"%>  <%#= link_to "Jämför Leverantörer", '/page1', id:"jämför" %>
+              <% end %>
+            </li>
+          </ul>
+      </nav>
+
+
+
+
+<div class="flex-container">
+  <div class="first">
+
+      <%= form_tag '/page1', method: :get , :id => 'main_form', :autocomplete => :off do %>
+      <p class="headers_form">Arbetsområde:</p>
+      <select class="productarea" name="assitance" id="productarea" onchange="myFunction(event)">
+        <% @product_areas.each do |productarea| %>
+          <option class="opts" id="opts">
+            <%=productarea %>
+          </option>
+        <%end%>
+      </select>
+
+      <p class="headers_form">Ställning:</p>
+
+      <%= text_field_tag :position, params[:position], :placeholder => 'Ex: systemutvecklare', class: 'position', :required => true%>
+
+      <p class="headers_form">Antal Personer:</p>
+      <%= number_field_tag :antal, params[:antal], :placeholder => '1', class: 'antal', :onchange => 'showSuppliers()', :required => true%>
+
+      <p class="headers_form">Ställningsprocent:</p>
+      <select class="percentage" onchange="myFunction(event)">
+        <% @position_percentage.each do |percentage| %>
+          <option><%= percentage %></option>
+        <%end%>
+
+      </select>
+
+      <p class="headers_form">Arbetserfarenhet:</p>
+      <select class="experience" onchange="myFunction(event)">
+        <%@level_of_experiance.each do |experiance| %>
+          <option><%=experiance%></option>
+        <%end%>
+      </select>
+
+      <p class="headers_form">Start Datum:</p>
+      <%= date_field_tag :start_date, params[:start_date], class: 'start_date', :required => true%>
+
+      <p class="headers_form">Slut Datum:</p>
+      <%= date_field_tag :end_date, params[:end_date], class: 'end_date', :required => true%>
+
+      <p class="headers_form">Stad:</p>
+      <%= text_field_tag :city, params[:city], :placeholder => 'Skriv in stad', class: 'city', :required => true%>
+
+      <p class="headers_form">Månadslön:</p>
+      <%= number_field_tag :salary, params[:salary], :placeholder => 'Skriv in månadslön', class: 'salary', :onchange => 'showSuppliers()'%>
+
+
+        <button class="submit_prod_area, btn btn-primary btn-lg" id="show">Sök Byråer
+        </button>
+
+</div>
+      <!-- Get right supplier deepending in city and product area -->
+
+<div class="second">
+<% if @suppliers.present? %>
+  <div class="wrapper">
+    <% @suppliers.each do |supplier| %>
+      <div class='supplier_div'>
+
+
+
+        <%= div_for supplier, :class => "suppliers_name" do %>
+
+        <p hidden><%= supplier.company %></p>  <%=image_tag supplier.image.url(:thumb)%>
+
+
+        <%end%>
+
+          <!-- <%=div_for supplier, :class=> "supplier_image" do %>
+
+            <%end%> -->
+
+        <%= div_for supplier, :class => "suppliers_description" do %>
+
+          <p><%= supplier.description %></p>
+        <%end%>
+
+        <%= div_for supplier, :class => "suppliers_recruitment_price", :id => "suppliers_recruitment_price" do %>
+          <p id="rek_pris">
+            Rekrytera: <%= supplier.recruitment_percentage.to_i.floor * @salary_multiplied_by_months.floor / 100%> kr</p>
+        <%end%>
+
+        <!-- <%= div_for supplier, :class => "suppliers_id" do %>
+        <p hidden="hidden"><%= supplier.id.to_i%></p>
+      <%end%> -->
+
+        <% if @assitance == "it" %>
+          <%= div_for supplier, :class => "suppliers_price" do %>
+              <p>Hyr per timme:
+                <%= supplier.prices.map {|p| p.it.to_f * @salary_divided_by_hours.to_f}.join("','") %> kr
+              </p>
+          <%end%>
+
+          <% elsif @assitance == "marknadsföring" %>
+            <%= div_for supplier, :class => "suppliers_price" do %>
+                <p>
+                  Hyr per timme: <%= supplier.prices.map {|p| p.marketing.to_f * @salary_divided_by_hours.to_f}.join("','") %>
+                 kr </p>
+          <%end%>
+
+          <% elsif @assitance == "finans/ekonomi" %>
+            <%= div_for supplier, :class => "suppliers_price" do %>
+              <p id="price_per_hour">
+                Hyr per timme:
+                <%= supplier.prices.map {|p| p.finance.to_f * @salary_divided_by_hours.to_f}.join("','") %>
+               kr</p>
+          <%end%>
+
+          <% elsif @assitance == "kundtjänst" %>
+            <%= div_for supplier, :class => "suppliers_price" do %>
+              <p>
+                Hyr per timme: <%= supplier.prices.map {|p| p.call_center.to_f * @salary_divided_by_hours.to_f}.join("','") %>
+               kr</p>
+          <%end%>
+
+          <% elsif @assitance == "teknologi/ingenjörer" %>
+            <%= div_for supplier, :class => "suppliers_price" do %>
+              <p>
+                Hyr per timme: <%= supplier.prices.map {|p| p.technology.to_f * @salary_divided_by_hours.to_f}.join("','") %>
+               kr</p>
+          <%end%>
+
+          <% elsif @assitance == "lager/logistik" %>
+            <%= div_for supplier, :class => "suppliers_price" do %>
+              <p>
+                Hyr per timme: <%= supplier.prices.map {|p| p.logisticts.to_f * @salary_divided_by_hours.to_f}.join("','") %>
+               kr</p>
+          <%end%>
+    <%end%>
+
+
+          <%= div_for supplier, :class => "suppliers_id" do %>
+            <p hidden="hidden"><%= supplier.id.to_i%></p>
+          <%end%>
+            <%= submit_tag 'Träffa Leverantör', class: 'välj_leverator'%>
+
+
+
+<%end%>
+</div>
+
+
+
+</div>
+
+<%end%>
+
+<%end%>
+
+
+<!-- Button trigger modal -->
+<button type="button" hidden="hidden" class="btn btn-primary test" data-toggle="modal" data-target="#exampleModal">
+Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fadee" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">Behov du vill diskutera med leverantör
+</h5>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body"></div>
+<p id="spec_rekbem">Vänligen välj om du vill rekrytera eller hyra in personal</p>
+<div class="modal-footer">
+
+<select required class="rent_or_recruit" name="rent_or_recruit">
+<option class="rent_or_recruit" value="Rent">Hyr per timme</option>
+<option class="rent_or_recruit" value="Recruit">Rekrytera</option>
+</select>
+</div>
+<div class="modal-footer">
+
+<button onclick="notLoggedIn(event)" type="button" class="btn btn-secondary confirm_order" data-dismiss="modal">Bekräfta</button>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<!-- Instruction Alert -->
+<div class='customAlert'>
+  <p class='message'></p>
+	<input type='button' class='confirmButton' value='Ok'>
+</div>
+
+
+<!-- Instruction Alert -->
+<div class='customAlert2'>
+  <p class='message2'></p>
+	<input type='button' class='confirmButton2' value='Ok'>
+</div>
+
+
+<!-- <div class="footer_index">
+<p class="footer_index_text">
+Digirek AB
+<br>
+org.nr: 556976-8269
+<br>
+Gumshornsgatan 7, 114 60 Göteborg
+</p>
+
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-youtube"></a>
+</div> -->

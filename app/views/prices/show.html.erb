@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>It:</strong>
+  <%= @price.it %>
+</p>
+
+<p>
+  <strong>Finance:</strong>
+  <%= @price.finance %>
+</p>
+
+<p>
+  <strong>Call center:</strong>
+  <%= @price.call_center %>
+</p>
+
+<p>
+  <strong>Logistics:</strong>
+  <%= @price.logistics %>
+</p>
+
+<p>
+  <strong>Marketing:</strong>
+  <%= @price.marketing %>
+</p>
+
+<p>
+  <strong>Technology:</strong>
+  <%= @price.technology %>
+</p>
+
+<%= link_to 'Edit', edit_price_path(@price) %> |
+<%= link_to 'Back', prices_path %>

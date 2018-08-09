@@ -1,0 +1,66 @@
+<p id="notice"><%= notice %></p>
+
+<%= image_tag @supplier.image.url(:thumb) %>
+
+<p>
+  <strong>Company:</strong>
+  <%= @supplier.company %>
+</p>
+
+<p>
+  <strong>Company number:</strong>
+  <%= @supplier.company_number %>
+</p>
+
+<p>
+  <strong>Company representative:</strong>
+  <%= @supplier.company_representative %>
+</p>
+
+<p>
+  <strong>Second representative:</strong>
+  <%= @supplier.second_representative %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @supplier.email %>
+</p>
+
+<p>
+  <strong>Telephone:</strong>
+  <%= @supplier.telephone %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @supplier.city %>
+</p>
+
+<p>
+  <strong>Recruitment percentage:</strong>
+  <%= @supplier.recruitment_percentage %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @supplier.description %>
+</p>
+
+<p>
+  <strong>Image file name:</strong>
+  <%= @supplier.image_file_name %>
+</p>
+
+<p>
+  <strong>Image content type:</strong>
+  <%= @supplier.image_content_type %>
+</p>
+
+<p>
+  <strong>Image file size:</strong>
+  <%= @supplier.image_file_size %>
+</p>
+
+<%= link_to 'Edit', edit_supplier_path(@supplier) %> |
+<%= link_to 'Back', suppliers_path %>

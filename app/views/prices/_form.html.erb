@@ -1,0 +1,52 @@
+<%= form_with(model: price, local: true) do |form| %>
+  <% if price.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(price.errors.count, "error") %> prohibited this price from being saved:</h2>
+
+      <ul>
+      <% price.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :it %>
+    <%= form.text_field :it, id: :price_it %>
+  </div>
+
+  <div class="field">
+    <%= form.label :finance %>
+    <%= form.text_field :finance, id: :price_finance %>
+  </div>
+
+  <div class="field">
+    <%= form.label :call_center %>
+    <%= form.text_field :call_center, id: :price_call_center %>
+  </div>
+
+  <div class="field">
+    <%= form.label :logistics %>
+    <%= form.text_field :logistics, id: :price_logistics %>
+  </div>
+
+  <div class="field">
+    <%= form.label :marketing %>
+    <%= form.text_field :marketing, id: :price_marketing %>
+  </div>
+
+  <div class="field">
+    <%= form.label :technology %>
+    <%= form.text_field :technology, id: :price_technology %>
+  </div>
+
+  <div class="field">
+    <%= form.label :supplier_id %>
+    <%= form.text_field :supplier_id, id: :supplier_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

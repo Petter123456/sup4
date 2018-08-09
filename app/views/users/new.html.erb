@@ -1,0 +1,81 @@
+
+<div class="image_background_om_oss">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+
+          <h1 class="h1_index"> &#9678;
+            Digirek.se
+          </h1>
+
+          <ul class="nav nav-tabs">
+            <li role="presentation">
+              <%= link_to "Hem", '/main_page', id: "mainpage" %>
+            </li>
+            <li role="presentation">
+              <%= link_to "Hitta leverantörer", '/page1', id: "mainpage" %>
+            </li>
+            <li role="presentation" class="active">
+              <%= link_to "Om Oss", '/om_oss', class:"top_menu" %>
+            </li>
+            <li role="presentation" class="active">
+              <% if current_user %>
+              Välkommen <%= current_user.name %> | <%= link_to "Logga ut", '/logout' %>
+              <% else %>
+              <%= link_to "Logga in", '/login', id: "login" %> | <%= link_to "Registrera konto", '/signup', id:"signup"%>  <%#= link_to "Jämför Leverantörer", '/page1', id:"jämför" %>
+              <% end %>
+            </li>
+          </ul>
+      </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="signup_form">
+    <div>
+    <%= form_for :user, class:"signup_form" do |form| %>
+    <p>Namn:</p>
+    <%= form.text_field :name, required: true%>
+    <p>Email:</p>
+    <%= form.text_field :email, required: true %>
+    <p>Telefon:</p>
+    <%= form.text_field :telephone_number, required: true %>
+    <p>Företag: </p>
+    <%= form.text_field :company, required: true %>
+    <p>Org.Nummer: </p>
+    <%= form.text_field :company_number, required: true %>
+  <p>Lösenord:</p>
+  <%= form.password_field :password, required: true %>
+<p>Bekräfta Lösenord: </p>
+<%= form.password_field :password_confirmation, required: true %> <br>
+    <%= form.submit "Skapa konto", class:"signup_submit_registration"%>
+    <% end %>
+  </div>
+</div>
+</div>
+
+<div class="footer_index">
+<p class="footer_index_text">          Digirek AB <br> org.nr: 556976-8269 <br>
+    Gumshornsgatan 7, 114 60 Göteborg
+  </p>
+
+  <a href="#" class="fa fa-facebook"></a>
+
+  <a href="#" class="fa fa-linkedin"></a>
+
+  <a href="#" class="fa fa-instagram"></a>
+
+  <a href="#" class="fa fa-youtube"></a>
+</div>

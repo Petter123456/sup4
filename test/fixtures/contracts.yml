@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  position: MyString
+  user_id: 1
+  supplier_id: 1
+  order_spec_id: 1
+  product_area: MyString
+  start_date: MyString
+  end_date: MyString
+  city: MyString
+  percentage: MyString
+  experiance: MyString
+  salary: MyString
+  supplier: MyString
+  supplier_price: MyString
+  supplier_name: MyString
+  type_of_service: MyString
+
+two:
+  position: MyString
+  user_id: 1
+  supplier_id: 1
+  order_spec_id: 1
+  product_area: MyString
+  start_date: MyString
+  end_date: MyString
+  city: MyString
+  percentage: MyString
+  experiance: MyString
+  salary: MyString
+  supplier: MyString
+  supplier_price: MyString
+  supplier_name: MyString
+  type_of_service: MyString

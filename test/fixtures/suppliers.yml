@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  company: MyString
+  company_number: MyString
+  company_representative: MyString
+  second_representative: MyString
+  email: MyString
+  telephone: MyString
+  city: MyString
+  recruitment_percentage: MyString
+  description: MyString
+  image_file_name: MyString
+  image_content_type: 1
+  image_file_size: 2018-08-09 13:19:58
+
+two:
+  company: MyString
+  company_number: MyString
+  company_representative: MyString
+  second_representative: MyString
+  email: MyString
+  telephone: MyString
+  city: MyString
+  recruitment_percentage: MyString
+  description: MyString
+  image_file_name: MyString
+  image_content_type: 1
+  image_file_size: 2018-08-09 13:19:58

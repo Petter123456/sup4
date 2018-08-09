@@ -1,0 +1,67 @@
+<%= form_with(model: supplier, html: { multipart: true }) do |f| %>
+  <% if supplier.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(supplier.errors.count, "error") %> prohibited this supplier from being saved:</h2>
+
+      <ul>
+      <% supplier.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+      <%= f.label :company %>
+      <%= f.text_field :company, id: :company %>
+    </div>
+
+    <div class="field">
+      <%= f.label :company_number %>
+      <%= f.text_field :company_number, id: :company_number %>
+    </div>
+
+    <div class="field">
+      <%= f.label :company_representative %>
+      <%= f.text_field :company_representative, id: :company_representative %>
+    </div>
+
+    <div class="field">
+      <%= f.label :second_representative %>
+      <%= f.text_field :second_representative, id: :second_representative %>
+    </div>
+
+    <div class="field">
+      <%= f.label :email %>
+      <%= f.text_field :email, id: :email %>
+    </div>
+
+    <div class="field">
+      <%= f.label :telephone %>
+      <%= f.text_field :telephone, id: :telephone %>
+    </div>
+
+    <div class="field">
+      <%= f.label :city %>
+      <%= f.text_field :city, id: :city %>
+    </div>
+
+    <div class="field">
+      <%= f.label :recruitment_percentage %>
+      <%= f.text_field :recruitment_percentage, id: :recruitment_percentage %>
+    </div>
+
+    <div class="field">
+      <%= f.label :description %>
+      <%= f.text_field :description, id: :description %>
+    </div>
+
+    <div class="field">
+      <%=f.label :image%>
+      <%=f.file_field :image%>
+    </div>
+
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>

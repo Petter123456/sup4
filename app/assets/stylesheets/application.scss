@@ -1,0 +1,895 @@
+@import "bootstrap";
+
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+   *= require animate
+   *= require_self
+   *= require_tree .
+   */
+
+*{
+  font-family: Montserrat sans-serif;;
+}
+
+.col-sm{
+  margin-top: 1.5% !important;
+}
+
+.image_background{
+background:image-url('background.jpg');
+width: 100%;
+height: 100%;
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+.flex-container {
+  display: flex;
+
+}
+
+.first{
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+.second{
+  /* border: solid; */
+  margin-left: 300px;
+    margin-top: 125px;
+}
+.wrapper{
+  width: 100%;
+}
+
+
+#particles{
+  height:100px;
+  background: black;
+}
+
+
+//FIRST PAGE///////////////////////////////////////////////////////////////
+ul.nav.nav-tabs{
+   border-bottom: none !important;
+}
+
+.h1_index{
+  color:white;
+  font-size: 400%;
+  text-shadow: 2px 2px 5px black;
+}
+
+.navbar{
+  float: right;
+  width:100%;
+  margin-top: 0px;
+  height: 60px;
+  color: white;
+
+
+}
+.navbar a{
+  color: white;
+}
+
+.navbar h1{
+  padding-top: 30px;
+  padding-top: 3%;
+
+}
+.nav-tabs li{
+  padding-left: 30px;
+font-size: 130%;
+padding-top: 38px;
+text-shadow: 2px 2px 5px black;
+}
+
+
+.h4{
+      color: white;
+      font-weight: 400;
+      text-align: left;
+      width: 40%;
+      padding-left: 15px;
+      padding-top: 10%;
+      font-size: 240%;
+      text-align: justify;
+      text-shadow: 2px 2px 5px black;
+}
+.premble{
+  max-width: 35%;
+      /* margin-right: auto; */
+      /* margin-left: auto; */
+      text-align: left;
+      color: white;
+      padding-left: 15px;
+      padding-top: 5%;
+      font-size: 150%;
+      text-align: justify;
+      text-shadow: 2px 2px 5px black;
+
+
+}
+
+#submit_prod_area_div{
+  text-align: center !important;
+  padding-top: 40px;
+}
+.btn{
+  font-size: 400%;
+}
+#show{
+  width: 100%;
+  height: 10%;
+  font-size: 200%;
+  margin-bottom: 20px;
+}
+
+#reset{
+color: red;
+width:100%;
+text-align: center !important;
+align-items: center !important;
+}
+
+    .footer_index{
+      margin-top: 100px;
+      position: bottom fixed;
+      background-color: white;
+      text-align: center;
+      color: black;
+      margin-bottom: 0% !important;
+      width: 100%;
+    }
+    .footer_index_text{
+      display: inline-block;
+      margin-top:10px;
+      margin-bottom: 10px;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Style all font awesome icons */
+    .fa {
+      padding: 10px;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    }
+
+    /* Add a hover effect if you want */
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    /* Set a specific color for each brand */
+
+    /* Facebook */
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+
+    .fa-linkedin {
+      background: #007bb5;
+      color: white;
+    }
+
+    .fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+
+//////END OF FIRST PAGE//////////////////////////////////////////////////////////////////////////
+
+
+///////////////LOGIN//////////////
+/////////////////////////////////
+.login_main_div{
+  text-align: center;
+  padding-top: 25%;
+
+}
+.login_main_div h1{
+  display: inline-block;
+  font-size: 500%;
+  color: white;
+}
+
+.login_form{
+  display: inline-block;
+  font-size: 500%;
+  width: 80%;
+  height: 80%;
+  border: 15px solid white;
+  background-color: #0d46a0;
+}
+
+.submit_tag_login{
+  border: solid;
+  width: 100%;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0,0,0,.2);
+  background-color: #002171;
+}
+.submit_tag_login:hover{
+  font-size: 110%;
+}
+.login_paragraphs{
+  width:80%;
+  text-align:left;
+  margin-left: 50px;
+  margin-top: 20px;
+  color:white;
+}
+
+.email_login{
+  border: solid white;
+  width: 80%;
+}
+#password{
+  border: solid white;
+  width: 80%;
+  margin-bottom: 30px;
+}
+.password_login_tag{
+  display: none;
+}
+.login_signup_path{
+  color: white;
+  margin-top: 20px;
+  font-size: 200%
+}
+.login_main_div div{
+   height: 50%;
+   widows: 50%;
+   font-size: 50%;
+}
+.wrapper_login_form{
+text-align: center;
+}
+.login_form{
+  display: inline-block;
+  width: 50%;
+  border: solid #fff;
+  text-align: center;
+ background-color: #0d46a0;
+}
+.submit_tag_login{
+background-color: #002071;
+}
+////////////////////////END OF LOGIN////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+/////////////REGISTRATION///////////////
+///////////////////////////////////////
+////////////////////////////////////7//
+  .signup_form{
+    text-align: center;
+    width: 100%;
+    border: none;
+    padding-top: 10%;
+  }
+  .signup_form div {
+    width: 80%;
+    display: inline-block;
+    font-size: 300%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border: 15px solid white;
+    background-color: #0d47a1;
+    display: inline-block;
+    font-size: 100%;
+
+
+  }
+  .signup_form div p {
+    text-align: left;
+    margin-left: 246px;
+    margin-top: 10px;
+    color: white;
+    width: 200px;
+  }
+  .signup_submit_registration{
+    border: solid;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 130%;
+    color: #fff;
+
+  }
+
+  .wrapper_signup_form{
+  text-align: center;
+
+  }
+
+  .signup_form div{
+    width: 50%;
+  }
+
+  .signup_submit_registration{
+  background-color: #002071;
+  }
+  ////////END OF REGISTRATION//////////////
+  /////////////////////////////////////////
+  /////////////////////////////////////////
+  /////////////////////////////////////////
+
+
+////////JÄMFÖR LEVERANTÖRER//////////////
+////////////////////////////////////////
+////////////////////////////////////////
+
+
+.image_background2{
+
+background:image-url('background2.jpg');
+width: 100%;
+height: 100%;
+background-repeat:no-repeat;
+background-size:cover;
+
+}
+
+
+.bootstrap_grid{
+  padding-top: 5%;
+}
+
+.col-sm{
+  margin-top: 7%;
+}
+.wrapper_main_page1{
+  text-align: left;
+  }
+
+// .instruktioner{
+// color: black;
+// background-color: white;
+// width: 50%;
+// padding-top:5%;
+// margin-left: 50%;
+// padding-bottom: 2%;
+// font-size: 120%;
+// }
+
+.instruktioner h1 {
+  margin-left: 50px;
+  padding-top: 15px;
+  width: 90%;
+}
+
+.instruktioner p {
+  margin-left: 50px;
+  margin-right: 53%;
+  width: 90%;
+  text-align: justify;
+}
+
+  #main_form{
+    display: inline-block;
+font-size: 110%;
+color: white;
+padding-top: 60px
+
+  }
+  #main_form div{
+    text-align: center;
+  }
+  .submit_jämför_lev{
+    border: solid;
+  }
+
+  .headers_form{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 120%;
+    text-shadow: 2px 2px 5px black;
+  }
+  #salary{
+    margin-bottom: 5px;
+  }
+
+.percentage, .productarea, .experience, .position, .start_date, .end_date, .city, .salary, #antal{
+  width: 240px;
+  font-size: 90%;
+}
+
+#start_date, #end_date, #city, #position, #salary, .productarea, .percentage, .experience{
+  color:black;
+  background-color: white;
+
+}
+
+.supplier_div{
+  background: white;
+  margin-bottom: 100px;
+  width: 800px;
+}
+
+.supplier_div p{
+  font-size: 100%;
+}
+
+.supplier_image{
+// margin-top: -165px;
+position: relative;
+top: 0px;
+left: 0px;
+}
+
+.supplier_image img{
+  height: 100%;
+  border: black;
+
+
+}
+
+.suppliers_name{
+  font-weight: bold;
+  background: white;
+  height: 35px;
+  font-size: 150% !important;
+  width: 100%;
+  text-align: left;
+  padding-top: 10px;
+}
+.suppliers_name p {
+}
+
+.suppliers_description{
+  margin-left: 27%;
+  background: white;
+  font-size: 110%;
+
+
+}
+
+
+#rek_pris{
+  font-size: 80%;
+    margin-left: 27%;
+      background: white;
+      width: 200px;
+}
+
+.suppliers_price{
+  font-size: 80%;
+  // margin-left: 200px;
+  background: white;
+      margin-left: 27%;
+      width: 200px;
+
+}
+
+  .välj_leverator{
+    background-color: #0069d9;
+    color:#fff;
+    width: 100%;
+    text-shadow: 2px 2px 5px black;
+ }
+
+input.välj_leverator:hover {
+ background-color: darkblue;
+ }
+
+/////////////////////////////// INSTRUCTION ALERT
+/////////////////////////////// INSTRUCTION ALERT
+/////////////////////////////// INSTRUCTION ALERT
+/////////////////////////////// INSTRUCTION ALERT
+ .customAlert{
+
+  display: none;
+  position: fixed;
+  max-width: 25%;
+  min-width: 550px !important;
+  min-height: 50%;
+  height: 200px;
+  left: 50%;
+  top: 30%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-left: -12.5%;
+  margin-top: -5.2%;
+  background: #000080;
+
+  @media all and (max-width: 1300px){
+    .message{
+      font-size: 34px !important;
+    }
+    input[type='button']{
+      height: 15% !important;
+    }
+  }
+
+  .message{
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: justify;
+  }
+
+  input[type='button']{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 50%;
+    height: 36px;
+    margin-top: -45px;
+    margin-left: -25%;
+    outline: 0;
+    border: 0;
+    background: #0069d9;
+    color: white;
+    &:hover{
+      transition: 0.3s;
+      cursor: pointer;
+    	background: lighten(#0062cc, 10%);
+    }
+  }
+}
+
+
+@keyframes fadeOut{
+	from{
+  	opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn{
+	from{
+  	opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+/////////////////////////////// END OF INSTRUCTION ALERT
+/////////////////////////////// END OF INSTRUCTION ALERT
+/////////////////////////////// END OF INSTRUCTION ALERT
+/////////////////////////////// END OF INSTRUCTION ALERT
+
+.flash{
+  color: white;
+  font-size: 200%;
+  text-align: justify;
+  line-height: 1.6;
+
+}
+
+
+/////////////////////////////// INSTRUCTION ALERT NO SUPPLIER
+/////////////////////////////// INSTRUCTION ALERT NO SUPPLIER
+/////////////////////////////// INSTRUCTION ALERT NO SUPPLIER
+/////////////////////////////// INSTRUCTION ALERT NO SUPPLIER
+ .customAlert2{
+
+  display: none;
+  position: fixed;
+  max-width: 25%;
+  min-width: 550px !important;
+  min-height: 30%;
+  height: 200px;
+  left: 50%;
+  top: 30%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-left: -12.5%;
+  margin-top: -5.2%;
+  background: #000080;
+
+  @media all and (max-width: 1300px){
+    .message2{
+      font-size: 34px !important;
+    }
+    input[type='button']{
+      height: 15% !important;
+    }
+  }
+
+  .message2{
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: justify;
+  }
+
+  input[type='button']{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 50%;
+    height: 36px;
+    margin-top: -45px;
+    margin-left: -25%;
+    outline: 0;
+    border: 0;
+    background: #0069d9;
+    color: white;
+    &:hover{
+      transition: 0.3s;
+      cursor: pointer;
+    	background: lighten(#0062cc, 10%);
+    }
+  }
+}
+
+
+@keyframes fadeOut{
+	from{
+  	opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn{
+	from{
+  	opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+/////////////////////////////// END OF INSTRUCTION ALERT NO SUPPLIER ///////////////////////////////
+/////////////////////////////// END OF INSTRUCTION ALERT NO SUPPLIER ///////////////////////////////
+/////////////////////////////// END OF INSTRUCTION ALERT NO SUPPLIER ///////////////////////////////
+
+////////////////////END OF JÄMFÖR LEV//////////
+/////////////////////////////////
+/////////////////////////)///////////
+//////////////////////
+
+
+
+////////////MODAL////////////
+////////////////////////////
+////////////////////////////
+#exampleModal{
+  margin-top: 10px;
+  background: white;
+  color: #002171;
+  height: 100% !important;
+  width: 600px !important;
+  border-radius: 0px !important;
+  font-size: 100%;
+  margin: 0 auto 0 auto
+}
+
+.modal-body{
+  padding-left: 20px;
+}
+#exampleModalLabel{
+  font-style: bold;
+}
+#exampleModal p{
+  color: black;
+  background-color: white;
+}
+#exampleModal button{
+  background: #0d46a0;
+  width: 100%;
+}
+#exampleModal .close{
+  width:80px;
+  height: 80%;
+background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+}
+#exampleModal select option {
+  background: green;
+}
+.rent_or_recruit{
+  color: white;
+  width: 100%;
+  height: 30px;
+  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+  padding-left: 210px !important;
+}
+
+.confirm_order{
+  font-size: 200%;
+}
+
+
+#spec_rekbem{
+  width: 100%;
+  text-align: center;
+  color: #CD5C5C !important;
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+   // Medium devices (tablets, 768px and up)
+   @media (min-width: 768px) {
+    ////////////////
+    ///////////////
+    ////////////////
+    ///REGISTRATION
+    ////////////////
+    #user_name, #user_email, #user_telephone_number, #user_company, #user_company_number, #user_password, #user_password_confirmation{
+      width:200px;
+    }
+
+
+    .signup_submit_registration{
+      font-size: 200%;
+    }
+    /////////////////////////
+    /////////////////////////
+    ////END OF REGISTRATION
+    ///////////////////////
+
+
+    //////////////////////
+    /////////////////////
+    ////LOGIN///////////
+    ///////////////////
+    .login_paragraphs {
+    width: 80%;
+    text-align: left;
+    margin-left: 90px;
+    margin-top: 20px;
+    color: white;
+    }
+
+    .login_form {
+    display: inline-block;
+    width: 50%;
+    border: solid #fff;
+    text-align: center;
+    background-color: #0d46a0;
+    margin-top: -180px;
+    }
+    //////////////
+    //////////////
+    //////////////
+    //END OF LOGIN
+    ///////////////
+    ///////////////
+
+
+
+     ///////////////
+     //////////////
+     //START INDEX//
+     //////////////
+     //////////////
+
+     // .submit_prod_area{
+     //   font-size: 200%;
+     //   margin-top: 150px;
+     //   height:200px;
+     //   width: 200px;
+     //  }
+      .h4_index{
+        font-size: 200%;
+      }
+
+      .intro_text{
+        font-size: 150%;
+      }
+
+      .byråer{
+        height: 500px;
+
+      }
+
+      /////////////////////
+      //////////////////////
+      /////////////////////
+      ////////////////////
+      //END OF INDEX PAGE////
+
+
+      /////////////////
+      ////////////////
+      ////////////////
+      ///PAGE 1/////////
+      ///////////////
+
+
+      .instruktioner p {
+        font-size: 90%;
+      }
+
+
+      .suppliers_description{
+        width: 450px;
+        font-style: italic;
+      }
+
+      #rek_pris{
+        width: 200px;
+      }
+      .välj_leverator{
+        font-size: 120%;
+      }
+   }
+
+
+
+/////////////////////////Om oss///////////
+/////////////////////////Om oss///////////
+/////////////////////////Om oss///////////
+
+// Bakgrunden gäller även för login & registration
+.image_background_om_oss{
+
+background:image-url('background2.jpg');
+width: 100%;
+height: 100%;
+background-repeat:no-repeat;
+background-size:cover;
+
+}
+
+.forklaring{
+  margin: 0 auto;
+  margin-left: 7%;
+  padding-top: 10%;
+  color: white;
+  text-align: justify;
+  width: 65%;
+  line-height: 1.6;
+
+}
+.slogan{
+  font-weight: bold;
+  margin-left: 20px;
+  font-size: 120%;
+  line-height: 1.6;
+
+}
+.forklaring p{
+  margin-left: 20px;
+  line-height: 200%;
+  text-shadow: 1px 1px 5px black;
+  font-size: 120%;
+
+}
+.forklaring h1{
+  margin-left: 20px;
+  line-height: 200%;
+  text-shadow: 1px 1px 5px black;
+}
+.forklaring li {
+  margin-left: 20px;
+  line-height: 200%;
+  text-shadow: 1px 1px 5px black;
+  font-size: 120%;
+
+}

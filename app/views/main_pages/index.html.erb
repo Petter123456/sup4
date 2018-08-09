@@ -1,0 +1,67 @@
+<div class="col-sm">
+<div class="image_background">
+
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+
+          <h1 class="h1_index"> &#9678;
+            Digirek.se
+          </h1>
+
+          <ul class="nav nav-tabs">
+            <li role="presentation">
+              <%= link_to "Hem", '/main_page', id: "mainpage" %>
+            </li>
+            <li role="presentation">
+              <%= link_to "Hitta leverantörer", '/page1', id: "mainpage" %>
+            </li>
+            <li role="presentation" class="active">
+              <%= link_to "Om Oss", '/om_oss', class:"top_menu" %>
+            </li>
+            <li role="presentation" class="active">
+              <% if current_user %>
+              Välkommen <%= current_user.name %> | <%= link_to "Logga ut", '/logout' %>
+              <% else %>
+              <%= link_to "Logga in", '/login', id: "login" %> | <%= link_to "Registrera konto", '/signup', id:"signup"%>  <%#= link_to "Jämför Leverantörer", '/page1', id:"jämför" %>
+              <% end %>
+            </li>
+          </ul>
+      </nav>
+
+
+
+
+
+      <h2 class="h4">
+        Ditt hjälpmedel för att välja rätt bemanning och rekryteringsbolag
+      </h2>
+      <p class="premble last">
+        Digirek.se är en enkel och helt kostnadsfri marknadsplats där du kan se vilka byrårer har rätt nish för just den kompetens du söker, och välja de som passar bäst för just dig & ditt nuvarande behov. Precis som om du hade bokat ett hotell.
+      </p>
+
+
+      <div id="submit_prod_area_div">
+          <form action="/page1" accept-charset="UTF-8" method="get" id='form_main_page'><input name="utf8" type="hidden" value="✓">
+            <input type="submit" name="commit" value="Starta" class="submit_prod_area, btn btn-primary btn-lg button pulse fadeInLeft" data-disable-with="Starta">
+      </form>
+
+    </div>
+
+</div>
+</div>
+
+<div class="footer_index">
+  <p class="footer_index_text">          Digirek AB <br> org.nr: 556976-8269 <br>
+  Gumshornsgatan 7, 114 60 Göteborg
+  </p>
+
+
+  <a href="#" class="fa fa-facebook"></a>
+
+  <a href="#" class="fa fa-linkedin"></a>
+
+  <a href="#" class="fa fa-instagram"></a>
+
+  <a href="#" class="fa fa-youtube"></a>
+
+</div>

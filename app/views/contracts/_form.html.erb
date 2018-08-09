@@ -1,0 +1,92 @@
+<%= form_with(model: contract, local: true) do |form| %>
+  <% if contract.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(contract.errors.count, "error") %> prohibited this contract from being saved:</h2>
+
+      <ul>
+      <% contract.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :position %>
+    <%= form.text_field :position, id: :contract_position %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.number_field :user_id, id: :contract_user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :supplier_id %>
+    <%= form.number_field :supplier_id, id: :contract_supplier_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :order_spec_id %>
+    <%= form.number_field :order_spec_id, id: :contract_order_spec_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :product_area %>
+    <%= form.text_field :product_area, id: :contract_product_area %>
+  </div>
+
+  <div class="field">
+    <%= form.label :start_date %>
+    <%= form.text_field :start_date, id: :contract_start_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :end_date %>
+    <%= form.text_field :end_date, id: :contract_end_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :city %>
+    <%= form.text_field :city, id: :contract_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :percentage %>
+    <%= form.text_field :percentage, id: :contract_percentage %>
+  </div>
+
+  <div class="field">
+    <%= form.label :experiance %>
+    <%= form.text_field :experiance, id: :contract_experiance %>
+  </div>
+
+  <div class="field">
+    <%= form.label :salary %>
+    <%= form.text_field :salary, id: :contract_salary %>
+  </div>
+
+  <div class="field">
+    <%= form.label :supplier %>
+    <%= form.text_field :supplier, id: :contract_supplier %>
+  </div>
+
+  <div class="field">
+    <%= form.label :supplier_price %>
+    <%= form.text_field :supplier_price, id: :contract_supplier_price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :supplier_name %>
+    <%= form.text_field :supplier_name, id: :contract_supplier_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :type_of_service %>
+    <%= form.text_field :type_of_service, id: :contract_type_of_service %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

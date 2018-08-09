@@ -1,0 +1,91 @@
+
+<div class="image_background_om_oss">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+
+          <h1 class="h1_index"> &#9678;
+            Digirek.se
+          </h1>
+
+          <ul class="nav nav-tabs">
+            <li role="presentation">
+              <%= link_to "Hem", '/main_page', id: "mainpage" %>
+            </li>
+            <li role="presentation">
+              <%= link_to "Hitta leverantörer", '/page1', id: "mainpage" %>
+            </li>
+            <li role="presentation" class="active">
+              <%= link_to "Om Oss", '/om_oss', class:"top_menu" %>
+            </li>
+            <li role="presentation" class="active">
+              <% if current_user %>
+              Welcome <%= current_user.name %> | <%= link_to "logout", '/logout' %>
+              <% else %>
+              <%= link_to "Login", '/login', id: "login" %> | <%= link_to "Sign-up", '/signup', id:"signup"%>  <%#= link_to "Jämför Leverantörer", '/page1', id:"jämför" %>
+              <% end %>
+            </li>
+          </ul>
+      </nav>
+
+
+  <div class="forklaring">
+
+    <h1>Vad är Digirek.se?</h1> <br>
+
+    <li>Har du någonsin funderat på att använda dig av en rekrytering & bemanningsbyrå, men vet inte vart du skall börja?</li>
+      <br>
+    <li>Eller är du kanske missnöjd med den leverantör du har och önskar att byta? </li>
+      <br>
+    <li>Har du inte tid att gå i möten med 10 olika leverantörer för att hitta den som passar bäst för dig? </li>
+      <br>
+    <li>Vill du i lugn och ro se över vilka leverantörer som finns, vad de är duktiga på och vad det kostar?</li>
+      <br><br>
+
+  <p class="slogan">Då är Digirek.se helt rätt för dig!</p>
+
+    <p class="forklaring_utvecklat">Digirek.se är en enkel plattform där du som beställare av rekryterings och bemanningtjänster kan jämföra olika leverantörer online. När du sedan har bestämt dig för vilken byrå du önskar att använda, kan du genom ett knapptryck boka ett möte med dem och gå igenom ditt behov mer detaljerat. <br><br>
+    Tjänsten är helt kostnadsfri och är till för att hjälpa beställarna att navigera genom den djungel av byråer som existerar på marknaden.
+  </p>
+
+  <br>
+
+  <h1>Kostar det verkligen ingenting?</h1>
+
+  <p> Det är helt korrekt, tjänsten kostar absolut ingenting. Det fungerar som så att när du har träffat den byrå som du önskar att arbeta med, och ni är överens så skriver ni ett avtal er emellan. I 99 % av fallen så betalar ni inte en enda krona förens ni har valt den person som ni känner er nöjda med, och de faktiskt har börjat arbeta. </p>
+
+
+  <h1>Vilka är vi som har startat Digirek.se?</h1>
+
+  <p> Digirek.se startades av individer som har vart på båda sidorna av bordet. Både som beställare av rekrytering och bemanningstjänster och även på försäljningssidan.
+  <br><br>
+  Vi vet gott och väl hur svårt det är som beställare att välja rätt leverantör, och det tunga arbetet som det medför med att ta samtal, möten, pris diskussioner med flera olika leverantörer innan man hittar den som har rätt nisch och passar allra bäst. <br><br>
+
+  På samma sär detta även ett problem för de anställda på rekrytering och bemannings bolagen. Känslan av att hjälpa en kund med precis rätt person och upprätta ett bra samarbete är helt fantastisk! Tyvärr läggs mycket tid på att tala med potentiella beställare och ofta ödslar man bara varandras tid. Genom Digirek.se tar beställaren istället kontakt med bolaget när de är intresserade, och på grund av detta kan de anställda istället lägga mer tid på att leverera rätt medarbetare istället för att försöka övertyga en potentiell kund.
+ </p>
+
+<br>
+<br>
+
+  </div>
+<br>
+
+
+
+</div>
+
+
+
+ <div class="footer_index">
+<p class="footer_index_text">          Digirek AB <br> org.nr: 556976-8269 <br>
+    Gumshornsgatan 7, 114 60 Göteborg
+  </p>
+
+  <a href="#" class="fa fa-facebook"></a>
+
+  <a href="#" class="fa fa-linkedin"></a>
+
+  <a href="#" class="fa fa-instagram"></a>
+
+  <a href="#" class="fa fa-youtube"></a>
+
+</div>

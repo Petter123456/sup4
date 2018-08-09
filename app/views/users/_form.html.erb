@@ -1,0 +1,57 @@
+<%= form_with(model: user, local: true) do |form| %>
+  <% if user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :user_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :user_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :password_digest %>
+    <%= form.text_field :password_digest, id: :user_password_digest %>
+  </div>
+
+  <div class="field">
+    <%= form.label :datetime %>
+    <%= form.text_field :datetime, id: :user_datetime %>
+  </div>
+
+  <div class="field">
+    <%= form.label :company %>
+    <%= form.text_field :company, id: :user_company %>
+  </div>
+
+  <div class="field">
+    <%= form.label :company_number %>
+    <%= form.text_field :company_number, id: :user_company_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :telephone_number %>
+    <%= form.text_field :telephone_number, id: :user_telephone_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :password_reset_token %>
+    <%= form.datetime_select :password_reset_token, id: :user_password_reset_token %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
