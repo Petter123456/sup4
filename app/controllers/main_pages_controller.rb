@@ -44,6 +44,7 @@ class MainPagesController < ApplicationController
   def confirm_order_and_email
 
     # creating contracts generated through strong params which is populated from tasks.js deepending on user selection
+    byebug
     Contract.create(main_params)
 
 

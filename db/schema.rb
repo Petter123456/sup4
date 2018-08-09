@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20180809122324) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "contracts", force: :cascade do |t|
     t.string "position"
     t.integer "user_id"
@@ -41,7 +44,7 @@ ActiveRecord::Schema.define(version: 20180809122324) do
     t.string "technology"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "supplier_id"
+    t.bigint "supplier_id"
     t.index ["supplier_id"], name: "index_prices_on_supplier_id"
   end
 
@@ -76,4 +79,5 @@ ActiveRecord::Schema.define(version: 20180809122324) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "prices", "suppliers"
 end

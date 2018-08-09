@@ -34,9 +34,9 @@
 <div class="flex-container">
   <div class="first">
 
-      <%= form_tag '/page1', method: :get , :id => 'main_form', :autocomplete => :off do %>
+      <%= form_tag '/page1', method: :get , :id => 'main_form'   do %>
       <p class="headers_form">Arbetsområde:</p>
-      <select class="productarea" name="assitance" id="productarea" onchange="myFunction(event)">
+      <select class="product_area" name="assitance" id="product_area" onchange="myFunction(event)">
         <% @product_areas.each do |productarea| %>
           <option class="opts" id="opts">
             <%=productarea %>
@@ -60,7 +60,7 @@
       </select>
 
       <p class="headers_form">Arbetserfarenhet:</p>
-      <select class="experience" onchange="myFunction(event)">
+      <select class="experiance" onchange="myFunction(event)">
         <%@level_of_experiance.each do |experiance| %>
           <option><%=experiance%></option>
         <%end%>

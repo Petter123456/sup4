@@ -240,13 +240,13 @@
     function choose_Supplier(){$('.välj_leverator').click(function(event){
 
       $('.btn.btn-primary.test').trigger('click')
-          var productarea = $('.productarea').val()
+          var product_area = $('.productarea').val()
           var position = $('#position').val()
           var start_date = $("#start_date").val()
           var end_date = $("#end_date").val()
           var city = $("#city").val()
           var percentage = $(".percentage").val()
-          var experience = $(".experience").val()
+          var experiance = $(".experiance").val()
           var salary = $("#salary").val()
           var antal = $("#antal").val()
 
@@ -262,7 +262,7 @@
 
           var type_of_service = $('.rent_or_recruit').val()
 
-        var string =  "<p id='productarea'> Område: " + productarea +"</p>" + "<p id='position'> Tjänst: " + position +"</p>" + "<p id='antal'> Antal: " + antal + "</p>" + "<p id='start_date'> Start datum: " + start_date + "</p>" + "<p id='end_date'> Slut Datum: " + end_date + "</p>" + "<p id='city'> Stad: " + city + "</p>" + "<p id='percentage'> Ställningsprocent: " + percentage + "</p>" + "<p id='city'> Erfarenhet: " + experience + "</p>" +  "<p id='supplier_price'>" + supplier_price +"</p>"+ "<p id='supplier_recruitment'>" + supplier_recruitment +"</p>" + "<p id='supplier_name'> Leverantör: " + supplier_name + "</p>"+ "<p hidden id='supplier_id'>" + parseInt(supplier_id); + "</p>"+ "<p id='supplier_price'>" + supplier_price + "</p>";
+        var string =  "<p id='product_area'> Område: " + product_area +"</p>" + "<p id='position'> Tjänst: " + position +"</p>" + "<p id='antal'> Antal: " + antal + "</p>" + "<p id='start_date'> Start datum: " + start_date + "</p>" + "<p id='end_date'> Slut Datum: " + end_date + "</p>" + "<p id='city'> Stad: " + city + "</p>" + "<p id='percentage'> Ställningsprocent: " + percentage + "</p>" + "<p id='city'> Erfarenhet: " + experiance + "</p>" +  "<p id='supplier_price'>" + supplier_price +"</p>"+ "<p id='supplier_recruitment'>" + supplier_recruitment +"</p>" + "<p id='supplier_name'> Leverantör: " + supplier_name + "</p>"+ "<p hidden id='supplier_id'>" + parseInt(supplier_id); + "</p>"+ "<p id='supplier_price'>" + supplier_price + "</p>";
 
         $('.modal-body').html(string);
         event.preventDefault();
@@ -272,7 +272,7 @@
           $.ajax({
             type: "GET",
             url: "/confirm_order_and_email",
-            data: {contracts: { productarea: productarea, position: position, start_date: start_date, end_date: end_date, city: city, percentage: percentage, experience: experience, salary: salary, supplier_name: supplier_name, supplier_id: supplier_id, supplier_price: supplier_price, productarea: productarea, type_of_service: type_of_service}}
+            data: {contracts: { productarea: product_area, position: position, start_date: start_date, end_date: end_date, city: city, percentage: percentage, experiance: experiance, salary: salary, supplier_name: supplier_name, supplier_id: supplier_id, supplier_price: supplier_price, type_of_service: type_of_service}}
 
           });
           window.location.reload();
