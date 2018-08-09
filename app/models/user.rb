@@ -1,7 +1,8 @@
 class User < ApplicationRecord
+  has_many :contracts
+  validates_uniqueness_of :email
   has_secure_password
-# validates_uniqueness_of :email
-has_many :contracts
+  # before_create { generate_token(:auth_token) }
 
 def send_password_reset
   generate_token(:password_reset_token)
