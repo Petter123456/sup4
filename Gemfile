@@ -54,7 +54,7 @@ group :test, :production do
 end
 
 group :development, :test do
-  gem 'sqlite3'
+  gem 'pg', '~> 0.18.4'
 end
 
 group :development, :test do
