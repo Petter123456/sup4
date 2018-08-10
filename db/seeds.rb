@@ -1,6 +1,4 @@
-Contract.create!([
-  {position: "systemutvecklare", user_id: nil, supplier_id: 1, order_spec_id: nil, product_area: nil, start_date: "2018-08-31", end_date: "2018-11-16", city: "göteborg", percentage: "100 %", experiance: nil, salary: "40000", supplier: nil, supplier_price: "Hyr per timme:\n                 kr\n              ", supplier_name: "Academic Work ", type_of_service: "Rent"}
-])
+
 Supplier.create!([
   {company: "Academic Work ", company_number: "78787", company_representative: "hhh", second_representative: "jhjhhj", email: "petter.fagerlund@gmail.com", telephone: "787878", city: "göteborg", recruitment_percentage: "25", description: "Vi är bäst på unga talanger med upp till 5 års erfarenhet ", image_file_name: "iBSlOL92.png", image_content_type: "image/png", image_file_size: 42497, image_updated_at: "2018-08-10 13:23:07"},
   {company: "Manpower", company_number: "7788778", company_representative: "jjjhhk", second_representative: "kjhkjhkjhk", email: "petter.fagerlund@gmail.com", telephone: "782178178", city: "göteborg", recruitment_percentage: "23", description: "Vi är världsledande inom rekrytering och bemanning ", image_file_name: "manpower.jpg", image_content_type: "image/jpeg", image_file_size: 11222, image_updated_at: "2018-08-10 14:02:38"},
