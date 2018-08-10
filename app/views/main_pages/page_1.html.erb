@@ -36,7 +36,7 @@
 
       <%= form_tag '/page1', method: :get , :id => 'main_form'   do %>
       <p class="headers_form">Arbetsområde:</p>
-      <select class="product_area" name="assitance" id="product_area" onchange="myFunction(event)">
+      <select class="productarea" name="assitance" id="productarea" onchange="myFunction(event)">
         <% @product_areas.each do |productarea| %>
           <option class="opts" id="opts">
             <%=productarea %>

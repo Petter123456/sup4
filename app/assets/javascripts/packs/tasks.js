@@ -3,26 +3,26 @@
     const productarea = $('.productarea').val()
     //MINIMUM SALARY DEEPENING ON AREA OF EXPERTISE
     function MinSalaryIt() {
-        if ($('.productarea .opts').val() === "IT" && $('.experience').val() === "1 year" && Number($('.salary').val()) < 33000){
+        if ($('.productarea .opts').val() === "IT" && $('.experiance').val() === "1 year" && Number($('.salary').val()) < 33000){
             alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå");
             return true
-        }  else if ($('.productarea .opts').val() === "IT" && $('.experience').val() === "Just Graduated" && Number($('.salary').val()) < 25000){
+        }  else if ($('.productarea .opts').val() === "IT" && $('.experiance').val() === "Just Graduated" && Number($('.salary').val()) < 25000){
               alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå")
               return true
           }
-        else if ($('.productarea .opts').val() === "IT" && $('.experience').val() === "2 years" && Number($('.salary').val()) < 37000){
+        else if ($('.productarea .opts').val() === "IT" && $('.experiance').val() === "2 years" && Number($('.salary').val()) < 37000){
             alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå")
             return true
         }
-        else if ($('.productarea .opts').val() === "IT" && $('.experience').val() === "3 years" && Number($('.salary').val()) < 40000){
+        else if ($('.productarea .opts').val() === "IT" && $('.experiance').val() === "3 years" && Number($('.salary').val()) < 40000){
             alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå")
             return true
         }
-        else if ($('.productarea .opts').val() === "IT" && $('.experience').val() === "4 years" && Number($('.salary').val()) < 45000){
+        else if ($('.productarea .opts').val() === "IT" && $('.experiance').val() === "4 years" && Number($('.salary').val()) < 45000){
             alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå")
             return true
         }
-        else if ($('.productarea .opts').val() === "IT" && $('.experience').val() === "5 years" && Number($('.salary').val()) < 50000){
+        else if ($('.productarea .opts').val() === "IT" && $('.experiance').val() === "5 years" && Number($('.salary').val()) < 50000){
             alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå")
             return true
         }     else if ($('.productarea .opts').val() === "IT" &&  Number($('.salary').val()) < 20000){
@@ -31,27 +31,27 @@
             }
     };
     function MinSalaryFinance() {
-        if ($('.productarea .opts').val() === "Finans/Ekonomi" && $('.experience').val() === "1 year" && Number($('.salary').val()) < 33000){
+        if ($('.productarea .opts').val() === "Finans/Ekonomi" && $('.experiance').val() === "1 year" && Number($('.salary').val()) < 33000){
             alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå");
             return true
         }
-        else if ($('.productarea .opts').val() === "Finans/Ekonomi" && $('.experience').val() === "Just Graduated" && Number($('.salary').val()) < 25000){
+        else if ($('.productarea .opts').val() === "Finans/Ekonomi" && $('.experiance').val() === "Just Graduated" && Number($('.salary').val()) < 25000){
               alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå")
               return true
           }
-        else if ($('.productarea .opts').val() === "Finans/Ekonomi" && $('.experience').val() === "2 years" && Number($('.salary').val()) < 37000){
+        else if ($('.productarea .opts').val() === "Finans/Ekonomi" && $('.experiance').val() === "2 years" && Number($('.salary').val()) < 37000){
             alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå")
             return true
         }
-        else if ($('.productarea .opts').val() === "Finans/Ekonomi" && $('.experience').val() === "3 years" && Number($('.salary').val()) < 40000){
+        else if ($('.productarea .opts').val() === "Finans/Ekonomi" && $('.experiance').val() === "3 years" && Number($('.salary').val()) < 40000){
             alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå")
             return true
         }
-        else if ($('.productarea .opts').val() === "Finans/Ekonomi" && $('.experience').val() === "4 years" && Number($('.salary').val()) < 45000){
+        else if ($('.productarea .opts').val() === "Finans/Ekonomi" && $('.experiance').val() === "4 years" && Number($('.salary').val()) < 45000){
             alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå")
             return true
         }
-        else if ($('.productarea .opts').val() === "Finans/Ekonomi" && $('.experience').val() === "5 years" && Number($('.salary').val()) < 50000){
+        else if ($('.productarea .opts').val() === "Finans/Ekonomi" && $('.experiance').val() === "5 years" && Number($('.salary').val()) < 50000){
             alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå")
             return true
         }     else if ($('.productarea .opts').val() === "Finans/Ekonomi" &&  Number($('.salary').val()) < 20000){
@@ -60,27 +60,27 @@
             }
       };
     function MinSalaryMarketing() {
-          if ($('.productarea .opts').val() === "Marknadsföring" && $('.experience').val() === "1 year" && Number($('.salary').val()) < 33000){
+          if ($('.productarea .opts').val() === "Marknadsföring" && $('.experiance').val() === "1 year" && Number($('.salary').val()) < 33000){
               alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå");
               return true
           }
-          else if ($('.productarea .opts').val() === "Marknadsföring" && $('.experience').val() === "Just Graduated" && Number($('.salary').val()) < 25000){
+          else if ($('.productarea .opts').val() === "Marknadsföring" && $('.experiance').val() === "Just Graduated" && Number($('.salary').val()) < 25000){
                 alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå")
                 return true
             }
-          else if ($('.productarea .opts').val() === "Marknadsföring" && $('.experience').val() === "2 years" && Number($('.salary').val()) < 37000){
+          else if ($('.productarea .opts').val() === "Marknadsföring" && $('.experiance').val() === "2 years" && Number($('.salary').val()) < 37000){
               alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå")
               return true
           }
-          else if ($('.productarea .opts').val() === "Marknadsföring" && $('.experience').val() === "3 years" && Number($('.salary').val()) < 40000){
+          else if ($('.productarea .opts').val() === "Marknadsföring" && $('.experiance').val() === "3 years" && Number($('.salary').val()) < 40000){
               alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå")
               return true
           }
-          else if ($('.productarea .opts').val() === "Marknadsföring" && $('.experience').val() === "4 years" && Number($('.salary').val()) < 45000){
+          else if ($('.productarea .opts').val() === "Marknadsföring" && $('.experiance').val() === "4 years" && Number($('.salary').val()) < 45000){
               alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå")
               return true
           }
-          else if ($('.productarea .opts').val() === "Marknadsföring" && $('.experience').val() === "5 years" && Number($('.salary').val()) < 50000){
+          else if ($('.productarea .opts').val() === "Marknadsföring" && $('.experiance').val() === "5 years" && Number($('.salary').val()) < 50000){
               alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå")
               return true
           }     else if ($('.productarea .opts').val() === "Marknadsföring" &&  Number($('.salary').val()) < 20000){
@@ -89,27 +89,27 @@
               }
         };
     function MinSalaryCustomerService() {
-              if ($('.productarea .opts').val() === "Kundtjänst" && $('.experience').val() === "1 year" && Number($('.salary').val()) < 33000){
+              if ($('.productarea .opts').val() === "Kundtjänst" && $('.experiance').val() === "1 year" && Number($('.salary').val()) < 33000){
                   alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå");
                   return true
               }
-              else if ($('.productarea .opts').val() === "Kundtjänst" && $('.experience').val() === "Just Graduated" && Number($('.salary').val()) < 25000){
+              else if ($('.productarea .opts').val() === "Kundtjänst" && $('.experiance').val() === "Just Graduated" && Number($('.salary').val()) < 25000){
                     alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå")
                     return true
                 }
-              else if ($('.productarea .opts').val() === "Kundtjänst" && $('.experience').val() === "2 years" && Number($('.salary').val()) < 37000){
+              else if ($('.productarea .opts').val() === "Kundtjänst" && $('.experiance').val() === "2 years" && Number($('.salary').val()) < 37000){
                   alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå")
                   return true
               }
-              else if ($('.productarea .opts').val() === "Kundtjänst" && $('.experience').val() === "3 years" && Number($('.salary').val()) < 40000){
+              else if ($('.productarea .opts').val() === "Kundtjänst" && $('.experiance').val() === "3 years" && Number($('.salary').val()) < 40000){
                   alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå")
                   return true
               }
-              else if ($('.productarea .opts').val() === "Kundtjänst" && $('.experience').val() === "4 years" && Number($('.salary').val()) < 45000){
+              else if ($('.productarea .opts').val() === "Kundtjänst" && $('.experiance').val() === "4 years" && Number($('.salary').val()) < 45000){
                   alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå")
                   return true
               }
-              else if ($('.productarea .opts').val() === "Kundtjänst" && $('.experience').val() === "5 years" && Number($('.salary').val()) < 50000){
+              else if ($('.productarea .opts').val() === "Kundtjänst" && $('.experiance').val() === "5 years" && Number($('.salary').val()) < 50000){
                   alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå")
                   return true
               }     else if ($('.productarea .opts').val() === "Kundtjänst" &&  Number($('.salary').val()) < 20000){
@@ -118,27 +118,27 @@
                   }
             };
     function MinSalaryTechnology() {
-                  if ($('.productarea .opts').val() === "Teknologi/Ingenjörer" && $('.experience').val() === "1 year" && Number($('.salary').val()) < 33000){
+                  if ($('.productarea .opts').val() === "Teknologi/Ingenjörer" && $('.experiance').val() === "1 year" && Number($('.salary').val()) < 33000){
                       alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå");
                       return true
                   }
-                  else if ($('.productarea .opts').val() === "Teknologi/Ingenjörer" && $('.experience').val() === "Just Graduated" && Number($('.salary').val()) < 25000){
+                  else if ($('.productarea .opts').val() === "Teknologi/Ingenjörer" && $('.experiance').val() === "Just Graduated" && Number($('.salary').val()) < 25000){
                         alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå")
                         return true
                     }
-                  else if ($('.productarea .opts').val() === "Teknologi/Ingenjörer" && $('.experience').val() === "2 years" && Number($('.salary').val()) < 37000){
+                  else if ($('.productarea .opts').val() === "Teknologi/Ingenjörer" && $('.experiance').val() === "2 years" && Number($('.salary').val()) < 37000){
                       alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå")
                       return true
                   }
-                  else if ($('.productarea .opts').val() === "Teknologi/Ingenjörer" && $('.experience').val() === "3 years" && Number($('.salary').val()) < 40000){
+                  else if ($('.productarea .opts').val() === "Teknologi/Ingenjörer" && $('.experiance').val() === "3 years" && Number($('.salary').val()) < 40000){
                       alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå")
                       return true
                   }
-                  else if ($('.productarea .opts').val() === "Teknologi/Ingenjörer" && $('.experience').val() === "4 years" && Number($('.salary').val()) < 45000){
+                  else if ($('.productarea .opts').val() === "Teknologi/Ingenjörer" && $('.experiance').val() === "4 years" && Number($('.salary').val()) < 45000){
                       alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå")
                       return true
                   }
-                  else if ($('.productarea .opts').val() === "Teknologi/Ingenjörer" && $('.experience').val() === "5 years" && Number($('.salary').val()) < 50000){
+                  else if ($('.productarea .opts').val() === "Teknologi/Ingenjörer" && $('.experiance').val() === "5 years" && Number($('.salary').val()) < 50000){
                       alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå")
                       return true
                   }     else if ($('.productarea .opts').val() === "Teknologi/Ingenjörer" &&  Number($('.salary').val()) < 20000){
@@ -147,27 +147,27 @@
                       }
                 };
     function MinSalaryLogistics() {
-                              if ($('.productarea .opts').val() === "Lager/Logistik" && $('.experience').val() === "1 year" && Number($('.salary').val()) < 33000){
+                              if ($('.productarea .opts').val() === "Lager/Logistik" && $('.experiance').val() === "1 year" && Number($('.salary').val()) < 33000){
                                   alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå");
                                   return true
                               }
-                              else if ($('.productarea .opts').val() === "Lager/Logistik" && $('.experience').val() === "Just Graduated" && Number($('.salary').val()) < 25000){
+                              else if ($('.productarea .opts').val() === "Lager/Logistik" && $('.experiance').val() === "Just Graduated" && Number($('.salary').val()) < 25000){
                                     alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå")
                                     return true
                                 }
-                              else if ($('.productarea .opts').val() === "Lager/Logistik" && $('.experience').val() === "2 years" && Number($('.salary').val()) < 37000){
+                              else if ($('.productarea .opts').val() === "Lager/Logistik" && $('.experiance').val() === "2 years" && Number($('.salary').val()) < 37000){
                                   alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå")
                                   return true
                               }
-                              else if ($('.productarea .opts').val() === "Lager/Logistik" && $('.experience').val() === "3 years" && Number($('.salary').val()) < 40000){
+                              else if ($('.productarea .opts').val() === "Lager/Logistik" && $('.experiance').val() === "3 years" && Number($('.salary').val()) < 40000){
                                   alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå")
                                   return true
                               }
-                              else if ($('.productarea .opts').val() === "Lager/Logistik" && $('.experience').val() === "4 years" && Number($('.salary').val()) < 45000){
+                              else if ($('.productarea .opts').val() === "Lager/Logistik" && $('.experiance').val() === "4 years" && Number($('.salary').val()) < 45000){
                                   alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå")
                                   return true
                               }
-                              else if ($('.productarea .opts').val() === "Lager/Logistik" && $('.experience').val() === "5 years" && Number($('.salary').val()) < 50000){
+                              else if ($('.productarea .opts').val() === "Lager/Logistik" && $('.experiance').val() === "5 years" && Number($('.salary').val()) < 50000){
                                   alert("Lönen ni erbjuder för den aktuella ställningen är för låg. Vänligen höj lönen till en mer attraktivt nivå")
                                   return true
                               }     else if ($('.productarea .opts').val() === "Lager/Logistik" &&  Number($('.salary').val()) < 20000){
@@ -177,10 +177,10 @@
                             };
     //MINMUM SALARY DEEPENDING ON EXPERIANCE
     function experianceVsPositionPercentage(){
-      var experience = $('.experience').val();
+      var experiance = $('.experiance').val();
       var percentage = $('.percentage').val();
 
-      if (percentage !== "100 %" && experience !== "Student" && experience !== "Nyexad") {
+      if (percentage !== "100 %" && experiance !== "Student" && experiance !== "Nyexad") {
         alert("Personen du söker kommer inte att vara intresserad i en deltidstjänst. Vänligen uppdatera ställnings procenten eller sänk erfarenhets nivån till Nyexad.");
        return true
       };
@@ -379,7 +379,7 @@ $(document).on('ready', function(){
 
   $('#productarea').val( localStorage.getItem("saveProductArea"));
 
-  $('.experience').val( localStorage.getItem("saveExperiance"));
+  $('.experiance').val( localStorage.getItem("saveExperiance"));
 
   $('.percentage').val( localStorage.getItem("savePercentage"));
 
@@ -399,7 +399,7 @@ $(document).on('ready', function(){
 function myFunction(e){
 
   var prodArea = $('#productarea').val();
-  var experience = $('.experience').val();
+  var experiance = $('.experiance').val();
   var percentage = $('.percentage').val();
   var startdate = Date.now();
   var enddate = $('.end_date').val();
@@ -409,7 +409,7 @@ function myFunction(e){
   //
   //
    localStorage.setItem("saveProductArea", prodArea);
-   localStorage.setItem("saveExperiance", experience);
+   localStorage.setItem("saveExperiance", experiance);
    localStorage.setItem("savePercentage", percentage);
   // localStorage.setItem("saveStartDate", startdate);
   // localStorage.setItem("saveEndDate", enddate);

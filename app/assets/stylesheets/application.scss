@@ -123,6 +123,10 @@ text-shadow: 2px 2px 5px black;
 
 }
 
+#form_main_page{
+  margin-bottom: 100px;
+}
+
 #submit_prod_area_div{
   text-align: center !important;
   padding-top: 40px;
@@ -145,13 +149,13 @@ align-items: center !important;
 }
 
     .footer_index{
-      margin-top: 100px;
       position: bottom fixed;
       background-color: white;
       text-align: center;
       color: black;
       margin-bottom: 0% !important;
       width: 100%;
+      font-size: 80%;
     }
     .footer_index_text{
       display: inline-block;
@@ -413,12 +417,12 @@ padding-top: 60px
     margin-bottom: 5px;
   }
 
-.percentage, .productarea, .experience, .position, .start_date, .end_date, .city, .salary, #antal{
+.percentage, .productarea, .experiance, .position, .start_date, .end_date, .city, .salary, #antal{
   width: 240px;
   font-size: 90%;
 }
 
-#start_date, #end_date, #city, #position, #salary, .productarea, .percentage, .experience{
+#start_date, #end_date, #city, #position, #salary, .productarea, .percentage, .experiance{
   color:black;
   background-color: white;
 
