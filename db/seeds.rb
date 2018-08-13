@@ -10,7 +10,5 @@ Supplier.create!([
   {company: "Software skills", company_number: "7787878", company_representative: "jskdhjsbf", second_representative: "hbhjbjhjh", email: "petter.fagerlund@gmail.com", telephone: "783278378", city: "göteborg", recruitment_percentage: "26", description: "Vi matchar de bästa IT talangerna med utmanande jobb!", image_file_name: "softwareskills.png", image_content_type: "image/png", image_file_size: 3364, image_updated_at: "2018-08-10 14:04:49"}
 ])
 User.create!([
-  {name: "petter", email: "petter.fagerlund@gmail.com", password_digest: "$2a$10$axlmTG1YA4tHYeH.xmsoVOKRofxsMp3Ccu7zZQRBj48dWVYixnQqa", datetime: nil, company: nil, company_number: nil, telephone_number: nil, auth_token_string: nil, password_reset_token: nil, password_reset_sent_at: nil},
-  {name: "calle", email: "petter.fagerlund@gmail.com", password_digest: "$2a$10$iKaRS5hx1biNQ1d6bjBKbeanNF7NZasIEdpMqPWiKLe3auhnV75f6", datetime: nil, company: nil, company_number: nil, telephone_number: nil, auth_token_string: nil, password_reset_token: nil, password_reset_sent_at: nil},
-  {name: "calle", email: "petter.fagerlund@gmail.com", password_digest: "$2a$10$T06Gt01IXOnZuRBL/UunEeypiJ64dIQjbGPC31GYL5quf/vuGoD.e", datetime: nil, company: nil, company_number: nil, telephone_number: nil, auth_token_string: nil, password_reset_token: nil, password_reset_sent_at: nil}
+  {name: "petter", email: "petter.fagerlund@gmail.com", password_digest: "$2a$10$axlmTG1YA4tHYeH.xmsoVOKRofxsMp3Ccu7zZQRBj48dWVYixnQqa", datetime: nil, company: nil, company_number: nil, telephone_number: nil, auth_token_string: nil, password_reset_token: nil, password_reset_sent_at: nil}
 ])
