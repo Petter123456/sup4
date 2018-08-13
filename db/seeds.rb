@@ -1,4 +1,6 @@
-
+Contract.create!([
+  {position: "systemutvecklare", user_id: nil, supplier_id: 1, order_spec_id: nil, product_area: nil, start_date: "2018-08-31", end_date: "2018-11-16", city: "göteborg", percentage: "100 %", experiance: nil, salary: "40000", supplier: nil, supplier_price: "Hyr per timme:\n                 kr\n              ", supplier_name: "Academic Work ", type_of_service: "Rent"}
+])
 Supplier.create!([
   {company: "Academic Work ", company_number: "78787", company_representative: "hhh", second_representative: "jhjhhj", email: "petter.fagerlund@gmail.com", telephone: "787878", city: "göteborg", recruitment_percentage: "25", description: "Vi är bäst på unga talanger med upp till 5 års erfarenhet ", image_file_name: "iBSlOL92.png", image_content_type: "image/png", image_file_size: 42497, image_updated_at: "2018-08-10 13:23:07"},
   {company: "Manpower", company_number: "7788778", company_representative: "jjjhhk", second_representative: "kjhkjhkjhk", email: "petter.fagerlund@gmail.com", telephone: "782178178", city: "göteborg", recruitment_percentage: "23", description: "Vi är världsledande inom rekrytering och bemanning ", image_file_name: "manpower.jpg", image_content_type: "image/jpeg", image_file_size: 11222, image_updated_at: "2018-08-10 14:02:38"},
@@ -8,5 +10,7 @@ Supplier.create!([
   {company: "Software skills", company_number: "7787878", company_representative: "jskdhjsbf", second_representative: "hbhjbjhjh", email: "petter.fagerlund@gmail.com", telephone: "783278378", city: "göteborg", recruitment_percentage: "26", description: "Vi matchar de bästa IT talangerna med utmanande jobb!", image_file_name: "softwareskills.png", image_content_type: "image/png", image_file_size: 3364, image_updated_at: "2018-08-10 14:04:49"}
 ])
 User.create!([
-  {name: "petter", email: "petter.fagerlund@gmail.com", password_digest: "$2a$10$axlmTG1YA4tHYeH.xmsoVOKRofxsMp3Ccu7zZQRBj48dWVYixnQqa", datetime: nil, company: nil, company_number: nil, telephone_number: nil, auth_token_string: nil, password_reset_token: nil, password_reset_sent_at: nil}
+  {name: "petter", email: "petter.fagerlund@gmail.com", password_digest: "$2a$10$axlmTG1YA4tHYeH.xmsoVOKRofxsMp3Ccu7zZQRBj48dWVYixnQqa", datetime: nil, company: nil, company_number: nil, telephone_number: nil, auth_token_string: nil, password_reset_token: nil, password_reset_sent_at: nil},
+  {name: "calle", email: "petter.fagerlund@gmail.com", password_digest: "$2a$10$iKaRS5hx1biNQ1d6bjBKbeanNF7NZasIEdpMqPWiKLe3auhnV75f6", datetime: nil, company: nil, company_number: nil, telephone_number: nil, auth_token_string: nil, password_reset_token: nil, password_reset_sent_at: nil},
+  {name: "calle", email: "petter.fagerlund@gmail.com", password_digest: "$2a$10$T06Gt01IXOnZuRBL/UunEeypiJ64dIQjbGPC31GYL5quf/vuGoD.e", datetime: nil, company: nil, company_number: nil, telephone_number: nil, auth_token_string: nil, password_reset_token: nil, password_reset_sent_at: nil}
 ])
