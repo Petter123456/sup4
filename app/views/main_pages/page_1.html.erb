@@ -36,9 +36,9 @@
 
       <%= form_tag '/page1', method: :get , :id => 'main_form'   do %>
       <p class="headers_form">Arbetsområde:</p>
-      <select class="productarea" name="assitance" id="productarea" onchange="myFunction(event)">
+      <select class="product_area" name="assitance" id="product_area" onchange="myFunction(event)">
         <% @product_areas.each do |productarea| %>
-          <option class="opts" id="opts">
+          <option class="opts" id="opts" onchange="myFunction(event)">
             <%=productarea %>
           </option>
         <%end%>
@@ -157,7 +157,7 @@
           <% elsif @assitance == "lager/logistik" %>
             <%= div_for supplier, :class => "suppliers_price" do %>
               <p>
-                Hyr per timme: <%= supplier.prices.map {|p| p.logisticts.to_f * @salary_divided_by_hours.to_f}.join("','") %>
+                Hyr per timme: <%= supplier.prices.map {|p| p.logistics.to_f * @salary_divided_by_hours.to_f}.join("','") %>
                kr</p>
           <%end%>
     <%end%>
