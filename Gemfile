@@ -50,6 +50,7 @@ gem 'bcrypt', '~> 3.1.7'
 # gem 'capistrano-rails', group: :development
 
 gem 'seed_dump'
+gem 'figaro'
 
 
 group :test, :production do
