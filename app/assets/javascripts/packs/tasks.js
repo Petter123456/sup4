@@ -365,6 +365,8 @@ $(document).ready(function(){
   if (window.location.href.match('/page1')) {
       if ($('#city').val() === "") {
 
+
+
     var currentCallback;
 
     // override default browser alert
@@ -392,6 +394,7 @@ $(document).ready(function(){
 
       // our custom alert box
       setTimeout(function(){
+
         alert('Fyll i fälten till vänster så att det matchar ditt nuvarande behov. Digirek kommer att ge dig råd om du råkar skriva in något felaktigt, exempelvis för låg ställningsprocent om du söker en väldigt erfaren person. Sedan klickar du bara på knappen "Sök Byråer" så ser du vilka leverantörer som kan hjälpa dig. Om du väljer en byrå och vill träffa dem måste du först logga in eller skapa ett konto (det tar 30 sekunder)', function(){
             console.log("Callback executed");
           });
