@@ -2,8 +2,8 @@
 <div class="row">
 
 <div class="col-md-6 logo">
-  <h1 class="h1_index"> &#9678;Digirek.se
-  </h1><p>Make the right decision for your company</p>
+  <h1 class="h1_index"> &#9678;Digirek
+  </h1><p>Choose the right recruitment partner for you</p>
   </div>
 
   <div class="col-md-6 navbar_column">
@@ -22,15 +22,20 @@
               <%= link_to "Om Oss", '/om_oss', class:"top_menu" %>
             </li>
             <li role="presentation" class="active">
-              <% if current_user %>
-              Välkommen <%= current_user.name %> | <%= link_to "Logga ut", '/logout' %>
-              <% else %>
-              <%= link_to "Logga in", '/login', id: "login" %> | <%= link_to "Registrera konto", '/signup', id:"signup"%>  <%#= link_to "Jämför Leverantörer", '/page1', id:"jämför" %>
-              <% end %>
+              <%= link_to "Kontakt", '/om_oss', class:"top_menu" %>
             </li>
+            <!-- <li role="presentation" class="login_register_option">
+
+            </li> -->
           </ul>
+
       </nav>
   </div>
+  <% if current_user %>
+  Välkommen <%= current_user.name %> | <%= link_to "Logga ut", '/logout' %>
+  <% else %>
+  <%= link_to "Logga in |", '/login', id: "login" %> <%= link_to "Registrera konto", '/signup', id:"signup"%>  <%#= link_to "Jämför Leverantörer", '/page1', id:"jämför" %>
+  <% end %>
 </div>
 
       <div class=" row_first_page">
@@ -44,7 +49,6 @@
         <p class="premble last">
           Digirek.se är en enkel plattform där du kan se vilka rekrytering och bemannings bolag finns i din stad, och som kan hjälpa dig med ditt behov.
         </p>
-<break>  </break>
 
         <form action="/page1" accept-charset="UTF-8" method="get" id='form_main_page'><input name="utf8" type="hidden" value="✓">
               <input type="submit" name="commit" value="Starta" class="submit_prod_area, btn btn-primary btn-lg button pulse fadeInLeft" data-disable-with="Starta">
@@ -55,6 +59,9 @@
 </div>
       </div>
 
+
+
+<div>
 <footer>
     <p class="footer_index_text">          Digirek AB <br> org.nr: 556976-8269 <br>
   Gumshornsgatan 7, 114 60 Göteborg
@@ -69,3 +76,4 @@
 
     <a href="#" class="fa fa-youtube"></a>
 </footer>
+</div>
