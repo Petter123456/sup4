@@ -185,12 +185,13 @@ display: inline-block;
 #form_main_page{
   text-align: center;
   padding-top: 2%;
-
 }
 
 input[value="Starta"]
 {
   font-size: 200%;
+  color: #fff;
+  letter-spacing: 3px;
 
 }
 
@@ -198,11 +199,27 @@ input[value="Starta"]
   margin-top: 5%;
 }
 
+.btn-primary{
+  background-color: #00aa3c;
+  border-color: #00aa3c;
+
+  -webkit-transition: color 0.5s; /* For Safari 3.0 to 6.0 */
+          transition: color 0.5s; /* For modern browsers */
+            text-transform: uppercase;
+}
+
+.btn-primary:hover{
+
+  filter: brightness(80%);
+  border: #00aa3c;
+  background-color: #00aa3c;
+
+}
 
 form input{
   width: 300px !important;
   height: 100px !important;
-  font-size: 200%;
+
 }
 
 footer{
