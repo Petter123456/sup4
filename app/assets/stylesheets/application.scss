@@ -68,6 +68,15 @@ background: white;
 
 //FIRST PAGE///////////////////////////////////////////////////////////////
 
+.login_first_page_div{
+  width: 100%;
+  text-align: right;
+}
+.login_first_page_div a{
+display: inline-block;
+}
+
+
 .logo{
   max-width: 36%;
 }
@@ -94,7 +103,7 @@ float: left;
   max-width: 40%;
 }
 
-.row a {
+.row a , .login_first_page_div a{
   color: black;
     text-decoration: none;
     background-color: transparent;
@@ -111,21 +120,21 @@ float: left;
     font-size: 80%;
 }
 #login{
-  // margin-left: 50px;
+   // float: right;
 }
 
 .navbar ul{
-  margin-top: 27%;
+  margin-top: 15.5%;
 }
 .navbar li{
-  // padding-right: 35px;
-  font-size: 80%;
+  padding-right: 35px;
+  // font-size: 80%;
 }
 .nav {
 border:none;
 }
 
-.row a:hover, .navbar a:hover{
+.row a:hover, .navbar a:hover, .row_first_page a:hover{
 
 
 color:lightgrey;

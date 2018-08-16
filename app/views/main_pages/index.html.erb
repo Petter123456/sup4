@@ -1,7 +1,16 @@
 
+<div class="login_first_page_div">
+  <% if current_user %>
+  Välkommen <%= current_user.name %> | <%= link_to "Logga ut", '/logout' %>
+  <% else %>
+  <%= link_to "Logga in |", '/login', id: "login" %> <%= link_to "Registrera konto", '/signup', id:"signup"%>  <%#= link_to "Jämför Leverantörer", '/page1', id:"jämför" %>
+  <% end %>
+</div>
+
 <div class="row">
 
 <div class="col-md-6 logo">
+
   <h1 class="h1_index"> &#9678;Digirek
   </h1><p>Choose the right recruitment partner for you</p>
   </div>
@@ -31,11 +40,6 @@
 
       </nav>
   </div>
-  <% if current_user %>
-  Välkommen <%= current_user.name %> | <%= link_to "Logga ut", '/logout' %>
-  <% else %>
-  <%= link_to "Logga in |", '/login', id: "login" %> <%= link_to "Registrera konto", '/signup', id:"signup"%>  <%#= link_to "Jämför Leverantörer", '/page1', id:"jämför" %>
-  <% end %>
 </div>
 
       <div class=" row_first_page">
@@ -59,7 +63,7 @@
 </div>
       </div>
 
-
+Jönköping
 
 <div>
 <footer>
