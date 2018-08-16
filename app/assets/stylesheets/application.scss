@@ -107,18 +107,19 @@ float: left;
 }
 
 #login, #signup{
-  margin-top: 6%;
+  // margin-top: 6%;
     font-size: 80%;
 }
 #login{
-  margin-left: 50px;
+  // margin-left: 50px;
 }
 
 .navbar ul{
-  margin-top: 15.7%;
+  margin-top: 27%;
 }
 .navbar li{
-  padding-right: 35px;
+  // padding-right: 35px;
+  font-size: 80%;
 }
 .nav {
 border:none;
@@ -192,7 +193,6 @@ input[value="Starta"]
   font-size: 200%;
   color: #fff;
   letter-spacing: 3px;
-
 }
 
 .second_column{
@@ -209,12 +209,17 @@ input[value="Starta"]
 }
 
 .btn-primary:hover{
-
   filter: brightness(80%);
   border: #00aa3c;
   background-color: #00aa3c;
+}
+
+.btn-primary:focus, .btn-primary:active {
+  background-color:#00aa3c;
+  border: #00aa3c;
 
 }
+
 
 form input{
   width: 300px !important;
