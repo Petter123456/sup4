@@ -42,6 +42,10 @@ background: white;
 
 .flex-container {
   display: flex;
+  background-image: linear-gradient(rgba(74, 52, 3, 0.57), rgba(133, 93, 4, 0.75)), url(walking.jpg);
+  background-repeat-x: no-repeat;
+  background-size: 100% 100%;
+
 
 }
 
@@ -53,6 +57,7 @@ background: white;
 .second{
   /* border: solid; */
   margin-left: 100px;
+
 }
 .wrapper{
   width: 100%;
