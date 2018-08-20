@@ -1,8 +1,7 @@
 <p style="display: none;" class="petterpetter" id="petterpetter"><%= session[:user_id] ? 'true' : 'false'%></p>
 
-<div class="image_background2">
 
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <!-- <nav class="navbar navbar-default navbar-fixed-top">
 
           <h1 class="h1_index"> &#9678;
             Digirek.se
@@ -26,7 +25,7 @@
               <% end %>
             </li>
           </ul>
-      </nav>
+      </nav> -->
 
 
 
@@ -78,11 +77,14 @@
       <p class="headers_form">Månadslön:</p>
       <%= number_field_tag :salary, params[:salary], :placeholder => 'Skriv in månadslön', class: 'salary', :onchange => 'showSuppliers()'%>
 
+      <div>
 
-        <button class="submit_prod_area, btn btn-primary btn-lg" id="show">Sök Byråer
-        </button>
-
+      <button class="submit_prod_area, btn btn-primary btn-lg" id="show">Sök Byråer
+      </button>
+  </div>
 </div>
+
+
       <!-- Get right supplier deepending in city and product area -->
 
 <div class="second">
@@ -215,7 +217,6 @@ Launch demo modal
 </div>
 </div>
 
-</div>
 
 <!-- Instruction Alert -->
 <div class='customAlert'>
