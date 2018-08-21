@@ -309,7 +309,7 @@
 
 
           });
-          window.location.href='/page1'
+          window.location.reload();
         });
       });
     };
