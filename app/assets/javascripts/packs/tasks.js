@@ -306,8 +306,10 @@
             url: "/confirm_order_and_email",
             data: {contracts: { product_area: product_area, position: position, start_date: start_date, end_date: end_date, city: city, percentage: percentage, experiance: experiance, salary: salary, supplier_name: supplier_name, supplier_id: supplier_id, supplier_price: supplier_price, type_of_service: type_of_service}}
 
+
+
           });
-          window.location.reload();
+          window.location.href='/page1'
         });
       });
     };
@@ -386,7 +388,7 @@ $(document).ready(function(){
     	$('.confirmButton').click(function(){
         $('.customAlert').css('animation', 'fadeOut 0.3s linear');
         setTimeout(function(){
-         $('.customAlert').css('animation', 'none');
+         $('.customAlert').css('arails nimation', 'none');
     		$('.customAlert').css('display', 'none');
         }, 300);
         currentCallback();

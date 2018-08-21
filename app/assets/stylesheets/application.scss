@@ -224,7 +224,6 @@ input[value="Starta"]
 }
 
 .btn-primary:hover{
-  filter: brightness(80%);
   border: #00aa3c;
   background-color: #00aa3c;
 }
@@ -254,10 +253,6 @@ footer{
   width: 100%;
   color: white;
 }
-
-
-
-
 
 
     /* Style all font awesome icons */
@@ -484,6 +479,8 @@ color: white;
 background: #ece8e5;
 margin-left: 100px;
 margin-top: -10px;
+padding-left: 5px;
+padding-right: 5px;
 
 
 
@@ -497,6 +494,14 @@ margin-top: -10px;
 
 #show{
   width: 240px;
+  margin-bottom: 5px;
+}
+
+#show:hover{
+  transition: 0.3s !important;
+  cursor: pointer !important;
+  background: lighten(#00aa3c, 10%) !important;
+  border: #00aa3c
 
 }
   .headers_form{
@@ -603,7 +608,10 @@ width: 150px;
  }
 
 input.välj_leverator:hover {
-  -webkit-filter: brightness(80%);
+  transition: 0.3s !important;
+  cursor: pointer !important;
+  background: lighten(#00aa3c, 10%) !important;
+  border: #00aa3c
 
  }
 
@@ -665,6 +673,7 @@ input.välj_leverator:hover {
     outline: 0;
     border: 0;
     background: #00aa3c;
+    Filter: brightness(80%) !important;
     color: white;
 
     /* margin-top: 69px; */
@@ -873,6 +882,12 @@ background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
 
 .confirm_order{
   font-size: 200%;
+}
+.confirm_order:hover{
+  transition: 0.3s !important;
+  cursor: pointer !important;
+  background: lighten(#00aa3c, 10%) !important;
+  border: #00aa3c
 }
 
 
