@@ -44,7 +44,7 @@ class MainPagesController < ApplicationController
   def confirm_order_and_email
 
     # creating contracts generated through strong params which is populated from tasks.js deepending on user selection
-    
+
     Contract.create(main_params)
 
 
@@ -70,6 +70,9 @@ class MainPagesController < ApplicationController
   end
 
   def delete
+  end
+
+  def kontakt
   end
 
   private

@@ -317,27 +317,28 @@ color: grey;
 
 .login_form{
   display: inline-block;
-  font-size: 500%;
-  width: 80%;
-  height: 80%;
+  font-size: 200%;
+  width: 30%;
+  height: 100%;
   border: 15px solid white;
-  background-color: #0d46a0;
+  background-color: rgba(74, 52, 3, 0.57);
+;
 }
 
 .submit_tag_login{
-  border: solid;
   width: 100%;
   color: #fff;
-  text-shadow: 0 1px 0 rgba(0,0,0,.2);
-  background-color: #002171;
+  background-color: #00aa3c;
+  border-color: #00aa3c;
 }
 .submit_tag_login:hover{
-  font-size: 110%;
+  filter: brightness(80%);
+border: #00aa3c;
+background-color: #00aa3c;
 }
 .login_paragraphs{
-  width:80%;
-  text-align:left;
-  margin-left: 50px;
+  width:100%;
+  float: left;
   margin-top: 20px;
   color:white;
 }
@@ -355,9 +356,8 @@ color: grey;
   display: none;
 }
 .login_signup_path{
-  color: white;
+  color: black;
   margin-top: 20px;
-  font-size: 200%
 }
 .login_main_div div{
    height: 50%;
@@ -367,16 +367,7 @@ color: grey;
 .wrapper_login_form{
 text-align: center;
 }
-.login_form{
-  display: inline-block;
-  width: 50%;
-  border: solid #fff;
-  text-align: center;
- background-color: #0d46a0;
-}
-.submit_tag_login{
-background-color: #002071;
-}
+
 ////////////////////////END OF LOGIN////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////
 
@@ -389,24 +380,25 @@ background-color: #002071;
     text-align: center;
     width: 100%;
     border: none;
-    padding-top: 10%;
+    height: 100%;
+    padding-bottom: 100px;
   }
   .signup_form div {
-    width: 80%;
     display: inline-block;
     font-size: 300%;
-    margin-top: 50px;
     margin-bottom: 30px;
     border: 15px solid white;
-    background-color: #0d47a1;
+    background-color: rgba(74, 52, 3, 0.57);
+    // border: #00aa3c;
+    // background-color: #00aa3c;
     display: inline-block;
     font-size: 100%;
-
-
+    width: 30%;
+    height: 100%;
   }
   .signup_form div p {
     text-align: left;
-    margin-left: 246px;
+    margin-left: 30%;
     margin-top: 10px;
     color: white;
     width: 200px;
@@ -425,12 +417,9 @@ background-color: #002071;
 
   }
 
-  .signup_form div{
-    width: 50%;
-  }
-
   .signup_submit_registration{
-  background-color: #002071;
+    border: #00aa3c;
+    background-color: #00aa3c;
   }
   ////////END OF REGISTRATION//////////////
   /////////////////////////////////////////
@@ -923,21 +912,9 @@ background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
     /////////////////////
     ////LOGIN///////////
     ///////////////////
-    .login_paragraphs {
-    width: 80%;
-    text-align: left;
-    margin-left: 90px;
-    margin-top: 20px;
-    color: white;
-    }
 
-    .login_form {
-    display: inline-block;
-    width: 50%;
-    border: solid #fff;
-    text-align: center;
-    background-color: #0d46a0;
-    }
+
+
     //////////////
     //////////////
     //////////////
@@ -1011,21 +988,12 @@ background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
 /////////////////////////Om oss///////////
 
 // Bakgrunden gäller även för login & registration
-.image_background_om_oss{
-
-background:image-url('background2.jpg');
-width: 100%;
-height: 100%;
-background-repeat:no-repeat;
-background-size:cover;
-
-}
 
 .forklaring{
   margin: 0 auto;
   margin-left: 7%;
   padding-top: 10%;
-  color: white;
+  color: black;
   text-align: justify;
   width: 65%;
   line-height: 1.6;
@@ -1036,24 +1004,70 @@ background-size:cover;
   margin-left: 20px;
   font-size: 120%;
   line-height: 1.6;
+  color: rgba(74, 52, 3, 0.57);
+
 
 }
 .forklaring p{
   margin-left: 20px;
   line-height: 200%;
-  text-shadow: 1px 1px 5px black;
+  // text-shadow: 1px 1px 5px black;
   font-size: 120%;
 
 }
 .forklaring h1{
   margin-left: 20px;
   line-height: 200%;
-  text-shadow: 1px 1px 5px black;
+  color: rgba(74, 52, 3, 0.57);
+
+  // text-shadow: 1px 1px 5px black;
 }
 .forklaring li {
   margin-left: 20px;
   line-height: 200%;
-  text-shadow: 1px 1px 5px black;
+  // text-shadow: 1px 1px 5px black;
   font-size: 120%;
+
+}
+
+
+//////////////////ÅTERSTÄLL LÖSENORD/////
+//////////////////////////////////////////
+///////////////////////////////////////
+
+.box1{
+  text-align: center !important;
+  align-items: center;
+  font-size: 200%;
+  // width: 200px;
+}
+.field label{
+  // margin-right: 2.3%;
+  color: rgba(74, 52, 3, 0.57);
+
+}
+.actions input{
+  border: #00aa3c;
+    background-color: #00aa3c;
+    color: white;
+    width: 357px;
+    margin-top: 10px;
+    margin-left: 5%;
+}
+//////////////////////////////////////////
+/////////////////////////////////////////
+////////////////////////////////////////
+
+
+
+//////////Kontakt///////////////
+//////////////////////////////////
+/////////////////////////////////
+.kontakt{
+  text-align: center;
+  padding-top: 10%;
+}
+.kontakt h1{
+  color: rgba(74, 52, 3, 0.57);
 
 }

@@ -13,6 +13,8 @@ default_url_options :host => "localhost:3000"
 root 'main_pages#index'
 
 get 'main_page' => 'main_pages#index'
+get 'kontakt' => 'main_pages#kontakt'
+
 
 get '/index' => 'suppliers#index'
 
