@@ -1,5 +1,5 @@
 class ConfirmationMailer < ApplicationMailer
-  default from: "wyncodeemailer@gmail.com"
+  default from: "email@digirek.se"
 
     def confirmation_email(user) #user from controller
       @user = user

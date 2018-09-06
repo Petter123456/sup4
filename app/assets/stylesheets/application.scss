@@ -77,6 +77,14 @@ background: white;
 .login_first_page_div{
   width: 100%;
   text-align: right;
+  color:#00aa3c;
+  text-transform: uppercase;
+}
+#logga_ut{
+  color:#00aa3c;
+}
+#last_li_main{
+float: right;
 }
 .login_first_page_div a{
 display: inline-block;
@@ -104,17 +112,23 @@ color:rgba(74, 52, 3, 0.57)
 
 .navbar{
 float: left;
+position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 .navbar_column{
-  max-width: 40%;
+  max-width: 60%;
 }
+
 
 .row a , .login_first_page_div a{
   color: black;
     text-decoration: none;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
-    padding: 5px;
+    // padding: 5px;
 
     -webkit-transition: color 0.5s; /* For Safari 3.0 to 6.0 */
             transition: color 0.5s; /* For modern browsers */
@@ -123,7 +137,9 @@ float: left;
 
 #login, #signup{
   // margin-top: 6%;
-    font-size: 80%;
+    color: pink;
+    transition: color 0.5s;
+
 }
 #login{
    // float: right;
@@ -140,7 +156,7 @@ float: left;
 border:none;
 }
 
-.row a:hover, .navbar a:hover, .row_first_page a:hover{
+.row, #login:hover,#signup:hover, a:hover, .navbar a:hover, .row_first_page a:hover{
 
 
 color:lightgrey;
@@ -165,7 +181,6 @@ color:lightgrey;
       width: 100%;
       height: 520px;
       /* position: absolute; */
-      opacity: 0.6;
       background-repeat-y: no-repeat;
       /* height: 100%; */
       overflow: hidden;
@@ -196,7 +211,7 @@ display: inline-block;
 }
 
 .h4, .premble, #form_main_page{
-  z-index: -1; position:relative;
+  z-index: 3000; position:relative;
 }
 #form_main_page{
   text-align: center;
@@ -224,8 +239,11 @@ input[value="Starta"]
 }
 
 .btn-primary:hover{
+  transition: 0.3s !important;
+  cursor: pointer !important;
+  background: #00dd4e !important;
   border: #00aa3c;
-  background-color: #00aa3c;
+
 }
 
 .btn-primary:active, .btn-primary:active, .btn:active, .btn-lg:active, .submit_prod_area:active, .btn:active, .btn.active, .btn:active, .btn:focus, .btn:active:focus, .btn.active:focus{
@@ -393,10 +411,11 @@ text-align: center;
   }
   .signup_form div p {
     text-align: left;
-    margin-left: 30%;
+    margin-left: 25%;
     margin-top: 10px;
     color: white;
     width: 200px;
+    text-transform: uppercase;
   }
   .signup_submit_registration{
     border: solid;
@@ -620,18 +639,24 @@ input.välj_leverator:hover {
 /////////////////////////////// INSTRUCTION ALERT
 /////////////////////////////// INSTRUCTION ALERT
  .customAlert{
+   // position: absolute;
+   // top: 0;
+   // width: 100%;
+   // z-index: 999;
+   // background: rgba(135, 216, 211, 0.85);
 
-  display: none;
-  position: fixed;
-  max-width: 25%;
-  min-width: 550px !important;
-  min-height: 50%;
-  height: 200px;
-  left: 50%;
-  padding: 10px;
-  box-sizing: border-box;
-  margin-left: -12.5%;
-  margin-top: 4%;
+
+   display: none;
+     position: fixed;
+     max-width: 25%;
+     min-width: 40% !important;
+     left: 40%;
+     padding: 10px;
+     box-sizing: border-box;
+     margin-top: 4%;
+     background: #ece8e5;
+
+
   // background-image: linear-gradient(rgba(74, 52, 3, 0.57), rgba(133, 93, 4, 0.75));
       // background-repeat-x: no-repeat;
  background: #ece8e5;
@@ -639,7 +664,7 @@ input.välj_leverator:hover {
 
   @media all and (max-width: 1300px){
     .message{
-      font-size: 34px !important;
+      // font-size: 34px !important;
     }
     input[type='button']{
       height: 15% !important;
@@ -655,25 +680,29 @@ input.välj_leverator:hover {
   }
 
   .message{
+    // padding: 2.5rem 0;
+    // text-align: center;
+    // margin: 0;
+    // font-size: 1.35rem;
+    // font-weight: 700;
+    // color:white;
+
+    font-weight: 700;
+    letter-spacing: 1px;
     padding: 5px;
     color: black;
-    font-size: 20px;
     line-height: 40px;
     text-align: justify;
   }
 
   input[type='button']{
-    // position: absolute;
-    // top: 100%;
-    // left: 50%;
+    background-color: #00aa3c;
+    border-color: #00aa3c;
+    transition: color 0.5s;
+    text-transform: uppercase;
     width: 100%;
-    // height: 36px;
-    // margin-top: -45px;
-    // margin-left: -25%;
     outline: 0;
     border: 0;
-    background: #00aa3c;
-    Filter: brightness(80%) !important;
     color: white;
 
     /* margin-top: 69px; */
@@ -682,13 +711,13 @@ input.välj_leverator:hover {
     left: 0px;
 
 
-    &:hover{
-      transition: 0.3s;
-      cursor: pointer;
-    	background: lighten(#00aa3c, 10%);
 
-      filter: brightness(80%) !important;
-    border: #00aa3c
+
+    &:hover{
+      transition: 0.3s !important;
+      cursor: pointer !important;
+      background: #00dd4e !important;
+      border: #00aa3c;
 
 
 
@@ -750,23 +779,20 @@ background-color:!important;
 /////////////////////////////// INSTRUCTION ALERT NO SUPPLIER
  .customAlert2{
 
-  display: none;
-  position: fixed;
-  max-width: 25%;
-  min-width: 550px !important;
-  min-height: 30%;
-  height: 200px;
-  left: 50%;
-  top: 30%;
-  padding: 10px;
-  box-sizing: border-box;
-  margin-left: -12.5%;
-  margin-top: -5.2%;
-  background: #000080;
+   display: none;
+     position: fixed;
+     max-width: 25%;
+     min-width: 40% !important;
+     left: 40%;
+     padding: 10px;
+     box-sizing: border-box;
+     margin-top: 4%;
+     background: #ece8e5;
+
 
   @media all and (max-width: 1300px){
     .message2{
-      font-size: 34px !important;
+      font-size: 100% !important;
     }
     input[type='button']{
       height: 15% !important;
@@ -774,33 +800,36 @@ background-color:!important;
   }
 
   .message2{
-    padding: 5px;
-    color: white;
-    font-size: 20px;
-    line-height: 40px;
-    text-align: justify;
+
+        font-weight: 700;
+        letter-spacing: 1px;
+        padding: 5px;
+        color: black;
+        line-height: 40px;
+        text-align: justify;
+        margin-bottom: 10%;
   }
 
   input[type='button']{
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    width: 50%;
-    height: 36px;
-    margin-top: -45px;
-    margin-left: -25%;
+    background-color: #00aa3c;
+    border-color: #00aa3c;
+    transition: color 0.5s;
+    text-transform: uppercase;
+    width: 100%;
     outline: 0;
     border: 0;
-
-    filter: brightness(80%) !important;
-    border: #00aa3c !important;
-    background-color:!important;
-
     color: white;
+
+    /* margin-top: 69px; */
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+
     &:hover{
-      transition: 0.3s;
-      cursor: pointer;
-    	// background: lighten(#0062cc, 10%);
+      transition: 0.3s !important;
+      cursor: pointer !important;
+      background: #00dd4e !important;
+      border: #00aa3c;
     }
   }
 }
@@ -916,6 +945,13 @@ background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
 
     .signup_submit_registration{
       font-size: 200%;
+    }
+    .signup_submit_registration:hover{
+      transition: 0.3s !important;
+      cursor: pointer !important;
+      background: #00dd4e !important;
+      border: #00aa3c;
+
     }
     /////////////////////////
     /////////////////////////

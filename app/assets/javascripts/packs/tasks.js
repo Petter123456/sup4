@@ -365,9 +365,7 @@ $(document).ready(function(){
 
   // Instruction Alert
   if (window.location.href.match('/page1')) {
-      if ($('#city').val() === "") {
-
-
+      // if ($('#city').val() === "") {
 
     var currentCallback;
 
@@ -403,7 +401,7 @@ $(document).ready(function(){
       }, 500);
     });
     }
-  }
+  // }
 });
 
 
@@ -412,6 +410,8 @@ $(document).on('ready', function(){
     showSuppliers();
 
     choose_Supplier();
+
+
 
 
   $('#product_area').val( localStorage.getItem("saveProductArea"));

@@ -84,7 +84,7 @@ class MainPagesController < ApplicationController
         :email,
         :position,
         :date,
-        :productarea,
+        :product_area,
         :start_date,
         :end_date,
         :percentage,

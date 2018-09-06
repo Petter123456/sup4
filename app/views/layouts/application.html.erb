@@ -8,6 +8,11 @@
 
 
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+
+
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
@@ -23,13 +28,13 @@
 
   <body>
 
-    <div class="login_first_page_div">
+    <!-- <div class="login_first_page_div">
       <% if current_user %>
       Välkommen <%= current_user.name %> | <%= link_to "Logga ut", '/logout' %>
       <% else %>
       <%= link_to "Logga in |", '/login', id: "login" %> <%= link_to "Registrera konto", '/signup', id:"signup"%>  <%#= link_to "Jämför Leverantörer", '/page1', id:"jämför" %>
       <% end %>
-    </div>
+    </div> -->
 
     <div class="row">
 
@@ -48,14 +53,21 @@
                 <li role="presentation">
                   <%= link_to "Hem", '/main_page', id: "mainpage" %>
                 </li>
-                <li role="presentation">
-                  <%= link_to "Hitta leverantörer", '/page1', id: "mainpage" %>
-                </li>
                 <li role="presentation" class="active">
                   <%= link_to "Om Oss", '/om_oss', class:"top_menu" %>
                 </li>
                 <li role="presentation" class="active">
                   <%= link_to "Kontakt", '/kontakt', class:"top_menu" %>
+                </li>
+                <li role="presentation" class="active" id="last_li_main">
+                  <div class="login_first_page_div">
+                    <% if current_user %>
+                    Välkommen <%= current_user.name %> | <%= link_to "Logga ut", '/logout', id:"logga_ut"%>
+                    <% else %>
+                    <%= link_to "Logga in |", '/login', id: "login" %> <%= link_to "Registrera konto", '/signup', id:"signup"%>  <%#= link_to "Jämför Leverantörer", '/page1', id:"jämför" %>
+                    <% end %>
+                  </div>
+
                 </li>
                 <!-- <li role="presentation" class="login_register_option">
 

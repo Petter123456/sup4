@@ -31,7 +31,6 @@
 
 
 
-
 <div class="flex-container">
   <div class="first">
 
@@ -69,6 +68,9 @@
 
       <p class="headers_form">Start Datum:</p>
       <%= date_field_tag :start_date, params[:start_date], class: 'start_date', :required => true%>
+
+      <!-- <input type="text" name="start_date" class="start_date" id=start_date required> -->
+
 
       <p class="headers_form">Slut Datum:</p>
       <%= date_field_tag :end_date, params[:end_date], class: 'end_date', :required => true%>
@@ -225,14 +227,14 @@ Launch demo modal
 
 
 <!-- Instruction Alert -->
-<div class='customAlert'>
+ <div class='customAlert'>
   <p class='message'></p>
 	<input type='button' class='confirmButton' value='Ok'>
 </div>
 
 
 <!-- Instruction Alert -->
-<div class='customAlert2'>
+ <div class='customAlert2'>
   <p class='message2'></p>
 	<input type='button' class='confirmButton2' value='Ok'>
 </div>
