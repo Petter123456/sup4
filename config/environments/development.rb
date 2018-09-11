@@ -62,8 +62,10 @@ Rails.application.configure do
 
 
 
-  config.action_mailer.delivery_method = :sendmail
-  # Defaults to:
+  config.action_mailer.delivery_method = :mailgun
+  config.action_mailer.mailgun_settings = {
+    api_key: 'ENV["api_key]', domain:'ENV["domain"]',
+  }  # Defaults to:
   # config.action_mailer.sendmail_settings = {
   #   location: '/usr/sbin/sendmail',
   #   arguments: '-i'
@@ -72,14 +74,14 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.default_options = {from: 'petter.fagerlund@gmail.com'}
 
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-  address:              'smtp.mailgun.org',
-  port:                 587,
-  domain:               ENV['domain'],
-  user_name:            ENV['username'],
-  password:             ENV['password'],
-  authentication:       'plain',
-  enable_starttls_auto: true  }
 
+    config.action_mailer.delivery_method = :smtp
+    config.action_mailer.smtp_settings = {
+    address:              'smtp.mailgun.org',
+    port:                 587,
+    domain:               ENV['domain'],
+    user_name:            ENV['username'],
+    password:             ENV['password'],
+    authentication:       'plain',
+    enable_starttls_auto: true  }
 end
