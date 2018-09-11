@@ -72,14 +72,13 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.default_options = {from: 'petter.fagerlund@gmail.com'}
 
-
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
   address:              'smtp.mailgun.org',
   port:                 587,
-  domain:               'postmaster@digirek.se.mailgun.org',
-  user_name:            'postmaster@digirek.se',
-  password:             'petter1234',
+  domain:               ENV['domain'],
+  user_name:            ENV['username'],
+  password:             ENV['password'],
   authentication:       'plain',
   enable_starttls_auto: true  }
 
