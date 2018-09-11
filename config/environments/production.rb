@@ -116,7 +116,7 @@ Rails.application.configure do
   port:                 587,
   domain:               'postmaster@digirek.se.mailgun.org',
   user_name:            'postmaster@digirek.se',
-  password:             '1414954bec4c5eb65ebc91650359ed2c-c1fe131e-5fb1cb33',
+  password:             'petter1234',
   authentication:       'plain',
   enable_starttls_auto: true  }
 end
