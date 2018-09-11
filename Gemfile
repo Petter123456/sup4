@@ -34,6 +34,7 @@ gem 'mailgun-ruby', '~> 1.1', '>= 1.1.10'
 gem "animate-rails"
 
 gem "paperclip", "~> 6.0.0"
+gem 'mail', '~> 2.7'
 
 
 # Use CoffeeScript for .coffee assets and views
