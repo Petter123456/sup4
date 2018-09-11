@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'postmaster@digirek.se'
+  default from: 'me@digirek.se'
   layout 'mailer'
 end
