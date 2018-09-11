@@ -29,6 +29,8 @@ gem 'puma', '~> 3.7'
 #div_form not woring without
 gem 'record_tag_helper', '~> 1.0'
 
+gem 'mailgun-ruby', '~>1.1.6'
+
 
 gem "animate-rails"
 
