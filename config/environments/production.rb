@@ -101,7 +101,7 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :mailgun
   config.action_mailer.mailgun_settings = {
-    api_key: 'ENV["api_key]', domain:'ENV["domain"]'
+    api_key: 'ENV["api_key]', domain:'ENV["domain"]',
   }
   # Defaults to:
   # config.action_mailer.sendmail_settings = {
