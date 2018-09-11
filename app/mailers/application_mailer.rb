@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'wyncodeemailer@gmail.com'
+  default from: 'postmaster@digirek.se'
   layout 'mailer'
 end
