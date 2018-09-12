@@ -117,6 +117,8 @@ Rails.application.configure do
   enable_starttls_auto: true
 }
 
-  config.action_mailer.default_url_options = { :host => "www.digirek.se" }
+  # config.action_mailer.default_url_options = { :host => "www.digirek.se" }
+
+  config.action_mailer.default_url_options = { :host => "https://radiant-plains-92986.herokuapp.com" }
 
 end
