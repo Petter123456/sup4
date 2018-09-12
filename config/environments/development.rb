@@ -2,7 +2,6 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
 
-  config.action_mailer.default_url_options = { :host => "localhost:3000" }
 
 
 
@@ -62,10 +61,9 @@ Rails.application.configure do
 
 
 
-  config.action_mailer.delivery_method = :mailgun
-  config.action_mailer.mailgun_settings = {
-    api_key: 'ENV["api_key]', domain:'ENV["domain"]',
-  }  # Defaults to:
+  config.action_mailer.delivery_method = :smtp
+
+  # Defaults to:
   # config.action_mailer.sendmail_settings = {
   #   location: '/usr/sbin/sendmail',
   #   arguments: '-i'
@@ -77,11 +75,14 @@ Rails.application.configure do
 
     config.action_mailer.delivery_method = :smtp
     config.action_mailer.smtp_settings = {
-    address:              'smtp.mailgun.org',
+    address:              'smtp.gmail.com',
     port:                 587,
-    domain:               ENV['domain'],
-    user_name:            ENV['username'],
-    password:             ENV['password'],
+    domain:               "gmail.com",
+    user_name:            ENV['gmail_username'],
+    password:             ENV['gmail_password'],
     authentication:       'plain',
     enable_starttls_auto: true  }
+
+    config.action_mailer.default_url_options = { :host => "localhost:3000" }
+
 end

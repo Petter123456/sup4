@@ -1,7 +1,6 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
-  config.action_mailer.default_url_options = { :host => "www.digirek.se" }
 
 
 
@@ -121,5 +120,9 @@ Rails.application.configure do
   user_name:            ENV['username'],
   password:             ENV['password'],
   authentication:       'plain',
-  enable_starttls_auto: true  }
+  enable_starttls_auto: true
+}
+
+  config.action_mailer.default_url_options = { :host => "www.digirek.se" }
+
 end
