@@ -1,5 +1,5 @@
 class ConfirmationMailer < ApplicationMailer
-  default from: "me@digirek.se"
+  default from: "postmaster@digirek.se"
 
     def confirmation_email(user) #user from controller
       @user = user
