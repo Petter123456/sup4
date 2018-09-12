@@ -1,6 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  require 'mailgun'
-
-  default from: 'me@digirek.se'
+  default from: 'postmaster@digirek.se'
   layout 'mailer'
 end
