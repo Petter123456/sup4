@@ -51,9 +51,6 @@ class MainPagesController < ApplicationController
     @supplier = Supplier.find(params[:contracts][:supplier_id])
     @contract = Contract.last
 
-
-    Mailgun::Client.new ENV['api_key']
-
     ConfirmationMailer.confirmation_email(@user).deliver_now
     ConfirmationMailer.admin_order_confirmation(@admin, @supplier, @user, @contract).deliver_now
     ConfirmationMailer.confirmation_email_supplier(@supplier, @user, @contract).deliver_now
