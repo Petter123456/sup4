@@ -51,6 +51,14 @@ class MainPagesController < ApplicationController
     @supplier = Supplier.find(params[:contracts][:supplier_id])
     @contract = Contract.last
 
+
+    mg_client = Mailgun::Client.new ENV['api_key']
+    message_params = {:from    => ENV['gmail_username'],
+                      :to      => @user.email,
+                      :subject => 'Sample Mail using Mailgun API',
+                      :text    => 'This mail is sent using Mailgun API via mailgun-ruby'}
+    mg_client.send_message ENV['domain'], message_params
+
     ConfirmationMailer.confirmation_email(@user).deliver_now
     ConfirmationMailer.admin_order_confirmation(@admin, @supplier, @user, @contract).deliver_now
     ConfirmationMailer.confirmation_email_supplier(@supplier, @user, @contract).deliver_now
