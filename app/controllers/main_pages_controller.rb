@@ -52,7 +52,7 @@ class MainPagesController < ApplicationController
     @contract = Contract.last
 
 
-    mg_client = Mailgun::Client.new ENV['api_key']
+    Mailgun::Client.new ENV['api_key']
 
     ConfirmationMailer.confirmation_email(@user).deliver_now
     ConfirmationMailer.admin_order_confirmation(@admin, @supplier, @user, @contract).deliver_now
