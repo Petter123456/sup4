@@ -1,7 +1,7 @@
 class ConfirmationMailer < ApplicationMailer
   default from: "postmaster@digirek.se"
 
-    def confirmation_email(user) #user from controller
+    def confirmation_email(@user) #user from controller
       @user = user
       @contract = Contract.last
       mail(to: @user.email, subject: 'Order Confirmation')
