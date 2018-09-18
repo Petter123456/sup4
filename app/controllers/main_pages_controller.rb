@@ -44,7 +44,7 @@ class MainPagesController < ApplicationController
   def confirm_order_and_email
 
     # creating contracts generated through strong params which is populated from tasks.js deepending on user selection
-    Contract.create(main_params)
+    Contract.create(main_params)  
     # Email functions with corresponding user, supplier and admin - same email is sendt to all.
     @admin = "petter.fagerlund@gmail.com"
     @user = User.find(session[:user_id])
