@@ -109,7 +109,6 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :mailgun
   config.action_mailer.mailgun_settings = {
   address:              'smtp.mailgun.org',
-  api_key:              ENV['api_key'],
   port:                 587,
   domain:               ENV['domain'],
   user_name:            ENV['username'],
