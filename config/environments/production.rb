@@ -106,16 +106,23 @@ Rails.application.configure do
   config.action_mailer.default_options = {from: 'wyncodeemailer@gmail.com'}
 
 
-  config.action_mailer.delivery_method = :mailgun
-  config.action_mailer.mailgun_settings = {
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
   address:              'smtp.mailgun.org',
   port:                 587,
-  api_key:                  ENV['api_key'],
   domain:               ENV['domain'],
   user_name:            ENV['username'],
   password:             ENV['password'],
   authentication:       'plain',
   enable_starttls_auto: true
+}
+Mailgun.configure do |config|
+  config.api_key =  ENV['api_key']
+end
+
+config.action_mailer.mailgun_settings = {
+  api_key: ENV['api_key'],
+  domain:  ENV['domain']
 }
 
   # config.action_mailer.default_url_options = { :host => "http://www.digirek.se/" }
